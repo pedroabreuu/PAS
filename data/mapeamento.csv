@@ -1,0 +1,110 @@
+COD_UC,UNIDADE_CURRICULAR,CATEGORIA,SALAS_PERMITIDAS
+2672,"Ciência, Tecnologia e Sociedade (2)",SALA,SALA
+5704,Química Geral (4),SALA,SALA
+9394,Lógica de Programação (4),LABINFO,403;404;405;407
+5703,Fundamentos de Biologia Moderna (4),SALA,SALA
+5702,Cálculo em uma variável (6),SALA,SALA
+2475,Álgebra Linear (4),SALA,SALA
+5359,Cálculo em várias variáveis (4),SALA,SALA
+2609,Probabilidade e Estatística (4),SALA+LABINFO,SALA;403;404;405;407
+4348,Fenômenos do Contínuo (4),SALA,SALA
+4538,Fenômenos Mecânicos Experimental (2),SALA+LAB_ESPECIFICO,SALA;214
+4772,Química Inorgânica (4),SALA+LAB_ESPECIFICO,SALA;314
+4350,Química Orgânica (4),SALA,SALA
+2833,Algoritmos e Estruturas de Dados II (4),SALA+LABINFO,SALA;403;404;405;407
+5746,Física Geral (4),SALA,SALA
+5739,Biologia do Desenvolvimento (2),SALA,SALA
+5741,Biologia Molecular da Célula (4),SALA,SALA
+5845,Laboratório de Bioquímica (4),SALA+LAB_ESPECIFICO,SALA;317
+5121,Microbiologia Aplicada e Industrial (4),SALA+LAB_ESPECIFICO,SALA;317
+8215,Fisiologia Humana I (4),SALA+LAB_ESPECIFICO,SALA;318
+5414,Algoritmos em Bioinformática (4),LABINFO,403;404;405;407
+3518,Circuitos Digitais (4),SALA+LABINFO,SALA;403;404;405;407
+4537,Tecnologia e Meio Ambiente (2),SALA,SALA
+5136,Fenômenos de Transporte (4),SALA,SALA
+5142,Materiais Cerâmicos (4),SALA,SALA
+5143,Materiais Metálicos (4),SALA,SALA
+5144,Materiais Poliméricos (4),SALA,SALA
+5145,Resistência dos Materiais (4),SALA,SALA
+5137,Fenômenos Eletromagnéticos Experimental (2),SALA+LAB_ESPECIFICO,SALA;216
+3490,Inteligência Artificial (4),SALA+LABINFO,SALA;403;404;405;407
+2612,Sistemas Operacionais (4),SALA+LABINFO,SALA;403;404;405;407
+2975,Teoria de Grafos (4),SALA+LABINFO,SALA;403;404;405;407
+5168,Projeto Orientado a Objetos (4),LABINFO,403;404;405;407
+2616,Linguagens Formais e Autômatos (4),SALA,SALA
+4714,Introdução à Ecologia (4),SALA,SALA
+5384,Bioética e Biossegurança (2),SALA,SALA
+5760,Bioquímica Analítica (4),SALA,SALA
+5762,Engenharia Bioquímica I (4),SALA,SALA
+5372,Introdução à Bioinformática (4),SALA+LABINFO,SALA;403;404;405;407
+5773,Análise Real I (4),SALA,SALA
+6062,Elementos de Álgebra (4),SALA,SALA
+4148,Otimização Linear (4),SALA,SALA
+4146,Álgebra Linear Computacional (4),SALA+LABINFO,SALA;403;404;405;407
+5132,Análise de Sinais (4),SALA,SALA
+5903,Circuitos Elétricos II (4),SALA,SALA
+9802,Introdução aos Materiais Elétricos (2),SALA,SALA
+6090,Laboratório de Sistemas Computacionais: Arquitetura,LAB_ESPECIFICO,401
+5855,Imunologia Geral (4),SALA,SALA
+5867,Biotecnologia Vegetal (4),SALA,SALA
+5865,Biotecnologia Ambiental II (4),SALA,SALA
+6088,Biotecnologia de Energias Renováveis I (4),SALA,SALA
+5866,Modelos Animais (4),SALA,SALA
+5785,Reologia dos Materiais (2),SALA,SALA
+5787,Técnicas Experimentais (4),SALA,SALA
+6671,Metalurgia Física (4),SALA,SALA
+5786,Síntese de Polímeros (4),SALA,SALA
+5784,Matérias Primas-Cerâmicas (4),SALA,SALA
+9794,Fundamentos de Administração (2),SALA,SALA
+5877,Processamento de Materiais Metálicos (4),SALA,SALA
+5878,Metalurgia Extrativa (2),SALA,SALA
+5879,Processamento de Termoplásticos (4),SALA,SALA
+6682,Engenharia de Produtos Cerâmicos (4),SALA,SALA
+5881,Corrosão (4),SALA,SALA
+6098,Lab. de Sist. Comp.: Compiladores (4),LAB_ESPECIFICO,401
+9806,Lab. de Controle Aplicado (2),LAB_ESPECIFICO,406
+9882,Projetos em Engenharia de Computação (4),SALA+LAB_ESPECIFICO,SALA;402
+6033,Sistemas Embarcados (4),LAB_ESPECIFICO,402
+8271,Lab. de Sist. Comp.: Comunicação Digital (4),LAB_ESPECIFICO,401
+4545,Eq. Diferenciais Parciais,SALA,SALA
+4405,Espaços Métricos,SALA,SALA
+4402,Otimização Não-Linear,SALA,SALA
+9826,Resolução de Problemas Via Modelagem Matemática,SALA+LABINFO,SALA;403;404;405;407
+5776,Biomecânica,SALA,SALA
+6111,Bioengenharia,SALA,SALA
+5170,Biomateriais,SALA,SALA
+4165,Imagens Biomédicas,LABINFO,403;404;405;407
+5763,Transdução de Grandezas Biomédicas,SALA+LAB_ESPECIFICO,SALA;312
+8217,Instrumentos Eletromédicos,SALA+LAB_ESPECIFICO,SALA;313
+6089,Laboratório de Circuitos Elétricos,LAB_ESPECIFICO,312
+4164,Metaheurística,SALA,SALA
+9880,Interação Humano-Computador e Experiência do Usuário,SALA+LABINFO,SALA;403;404;405;407
+7684,Laboratório de Matemática (2),SALA,SALA
+5169,Introdução à Nanotecnologia (2),SALA+LAB_ESPECIFICO,SALA;314
+6076,Cultura dos Jogos Digitais (2),SALA+LABINFO,SALA;403;404;405;407
+5408,Econometria (4),SALA,SALA
+4775,Macroeconomia (2),LABINFO,403;404;405;407
+6079,Tópicos em Ciência e Tecnologia II (2),SALA,SALA
+6084,"Direitos Humanos, Multiculturalismo e Ciência e Tecnologia",SALA,SALA
+7671,Empreendedorismo (2),SALA,SALA
+10427,Princípios e Técnicas de Encefalografia em Neurociências,SALA+LABINFO,SALA;403;404;405;407
+9793,Introdução à Economia,SALA,SALA
+5888,Metalurgia do Pó (2),SALA,SALA
+5871,Estrutura e Propriedades de Polímeros (4),SALA,SALA
+6927,Materiais de Construção Civil,SALA,SALA
+4782,Aspectos de Implementação de Banco de Dados (4),SALA+LABINFO,SALA;403;404;405;407
+7218,Tópicos em Tecnologia da Computação IV (Comunicação Digital),SALA+LAB_ESPECIFICO,SALA;401
+3050,Validação e Verificação de Software (4),SALA+LABINFO,SALA;403;404;405;407
+6168,Tópicos em Tecnologia da Computação I (4),SALA+LABINFO,SALA;403;404;405;407
+7217,Tópicos em Tecnologia da Computação III (Bioinformática),SALA+LAB_ESPECIFICO,SALA;402
+2832,Algoritmos e Estruturas de Dados I (4),SALA,SALA
+2650,Geometria Analítica,SALA,SALA
+5398,Sistemas Mecânicos (4),SALA,SALA
+9792,Métodos Matemáticos para Engenharia (4),SALA,SALA
+6674,Reciclagem de Materiais (2),SALA,SALA
+9819,INICIAÇÃO AOS PEPICT I,SALA,SALA
+8240,PRÁTICA EM PROJETOS EXTENSIONISTAS I,SALA,SALA
+2831,Banco de Dados (4),LABINFO+LAB_ESPECIFICO,403;404;405;407;401
+2471,Programação Orientada a Objetos (4),SALA+LABINFO,SALA;403;404;405;407
+3579,Projeto e Análise de Algoritmos (4),SALA,SALA
+9804,TCC I - EC,SALA+LAB_ESPECIFICO,SALA;402
