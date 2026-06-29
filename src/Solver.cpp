@@ -875,7 +875,89 @@ bool ILS(Solucao& corrente, EvalState& correnteState, const Instancia& inst, con
     return false;
 }
 
-std::pair<Solucao, SolverStats> executar(const Instancia& inst, const SolverConfig& cfg) {
+std::vector<unsigned> carregarSementesTaillard(const std::string& path) {
+    std::vector<unsigned> sementes;
+    std::ifstream in(path);
+    if (!in) return sementes;
+    unsigned long v;
+    while (in >> v) sementes.push_back(static_cast<unsigned>(v));
+    return sementes;
+}
+
+void definirNormalizadoresPorRange(const Instancia& inst, SolverConfig& cfg) {
+    if (!cfg.normalizarCustosSuaves || !cfg.normalizadorPorRange) return;
+
+    int maxCap = 0;
+    int minCapPos = std::numeric_limits<int>::max();
+    for (const auto& s : inst.salas) {
+        if (!s.disponivel || s.capacidade <= 0) continue;
+        maxCap = std::max(maxCap, s.capacidade);
+        minCapPos = std::min(minCapPos, s.capacidade);
+    }
+    if (minCapPos == std::numeric_limits<int>::max()) minCapPos = 0;
+
+    int maxDem = 0;
+    int minDemPos = std::numeric_limits<int>::max();
+    for (const auto& t : inst.turmas) {
+        const int d = demandaTurma(t);
+        if (d <= 0) continue;
+        maxDem = std::max(maxDem, d);
+        minDemPos = std::min(minDemPos, d);
+    }
+    if (minDemPos == std::numeric_limits<int>::max()) minDemPos = 0;
+
+    const long long maxExc = static_cast<long long>(cfg.pesoCapacidadeExcesso) * std::max(0, maxDem - minCapPos);
+    const long long maxSob = static_cast<long long>(cfg.pesoCapacidadeSobra) * std::max(0, maxCap - minDemPos);
+    const long long nCap = std::max<long long>({1, maxExc, maxSob});
+    cfg.normalizadorCapacidade = static_cast<int>(std::min<long long>(nCap, std::numeric_limits<int>::max()));
+
+    int maxDist = 0;
+    for (const auto& linha : inst.distSalas) {
+        for (int d : linha) {
+            if (d >= DIST_INF) continue;
+            maxDist = std::max(maxDist, d);
+        }
+    }
+    maxDist = std::max(maxDist, cfg.penalidadeDistDesconhecida);
+    const long long nDisp = std::max<long long>(1, static_cast<long long>(cfg.pesoDistancia) * maxDist);
+    cfg.normalizadorDistancia = static_cast<int>(std::min<long long>(nDisp, std::numeric_limits<int>::max()));
+
+    std::vector<int> contagem(inst.turmas.size() * NUM_TIPOS, 0);
+    for (const auto& o : inst.ocorrencias) {
+        if (o.idxTurma < 0) continue;
+        contagem[o.idxTurma * NUM_TIPOS + tipoIdx(o.tipoSalaRequerido)]++;
+    }
+    int maxOcc = 0;
+    for (int c : contagem) maxOcc = std::max(maxOcc, c);
+    const int nSalas = static_cast<int>(inst.salas.size());
+    const int maxDistintas = std::max(1, std::min(maxOcc, nSalas) - 1);
+    const long long nCons = std::max<long long>(1, static_cast<long long>(cfg.pesoConsistenciaTurmaTipo) * maxDistintas);
+    cfg.normalizadorConsistencia = static_cast<int>(std::min<long long>(nCons, std::numeric_limits<int>::max()));
+}
+
+std::pair<Solucao, SolverStats> executar(const Instancia& inst, const SolverConfig& cfgEntrada) {
+    SolverConfig cfg = cfgEntrada;
+    definirNormalizadoresPorRange(inst, cfg);
+    std::vector<unsigned> sementes = carregarSementesTaillard(cfg.arquivoSementes);
+    if (cfg.sortearSementes && !sementes.empty()) {
+        std::random_device rd;
+        std::mt19937 mestre(rd());
+        std::shuffle(sementes.begin(), sementes.end(), mestre);
+    }
+    if (cfg.verbose >= 1) {
+        std::cout << "[norm] range Ncons=" << cfg.normalizadorConsistencia
+                  << " Ndisp=" << cfg.normalizadorDistancia
+                  << " Ncap=" << cfg.normalizadorCapacidade << '\n';
+        std::cout << "[seed] sementes Taillard carregadas: " << sementes.size()
+                  << (cfg.sortearSementes ? " (sorteio aleatorio)" : " (ordem fixa)") << '\n';
+        if (!sementes.empty()) {
+            const int nStartsLog = std::max(1, cfg.numStarts);
+            std::cout << "[seed] sementes usadas:";
+            for (int s = 0; s < nStartsLog; ++s) std::cout << ' ' << sementes[s % sementes.size()];
+            std::cout << '\n';
+        }
+    }
+
     using clock = std::chrono::steady_clock;
     const auto start = clock::now();
     SolverStats stats;
@@ -898,7 +980,8 @@ std::pair<Solucao, SolverStats> executar(const Instancia& inst, const SolverConf
         if (s > 0 && tempoEsgotado()) break;
         ++stats.starts;
 
-        std::mt19937 gen(static_cast<unsigned>(cfg.seed) + static_cast<unsigned>(s) * 42u);
+        const unsigned semente = sementes.empty() ? static_cast<unsigned>(cfg.seed) + static_cast<unsigned>(s) * 42u : sementes[s % sementes.size()];
+        std::mt19937 gen(semente);
         Solucao corrente = construirGulosoImpl(inst, cfg, s == 0 ? nullptr : &gen, &cache);
         EvalState correnteState = construirEstado(corrente, inst, cfg, cache);
 

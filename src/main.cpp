@@ -1,4 +1,3 @@
-#include <algorithm>
 #include <iomanip>
 #include <iostream>
 #include <map>
@@ -19,10 +18,6 @@ static std::string tipoStr(TipoSala t) {
         case TipoSala::Outro: return "Outro";
     }
     return "?";
-}
-
-static bool tipoPermitido(const Ocorrencia& occ, const Sala& sala) { // verifica se o tipo da sala esta entre os tipos permitidos pela ocorrencia
-    return std::find(occ.tiposPermitidos.begin(), occ.tiposPermitidos.end(), sala.tipo) != occ.tiposPermitidos.end();
 }
 
 static std::string hmm(int minutos) {
@@ -73,6 +68,8 @@ int main(int argc, char** argv) {
         std::cerr << "Erro ao fazer parse: " << e.what() << '\n';
         return 1;
     }
+
+    definirNormalizadoresPorRange(inst, cfg);
 
     std::cout << "Resumo da instancia: \n";
     std::cout << "Salas lidas: " << rel.salasLidas << '\n';
@@ -147,41 +144,6 @@ int main(int argc, char** argv) {
     std::cout << "Ocorrencias alocadas: " << stats.ocorrenciasAlocadas << "/" << inst.ocorrencias.size() << '\n';
     std::cout << "Perturbacoes: " << stats.perturbacoes << '\n';
     std::cout << "Tempo (s): " << std::fixed << std::setprecision(3) << stats.tempoDecorrido << '\n';
-
-    int vNaoAlocada = 0;
-    int vForaDominio = 0;
-    int vTipo = 0;
-    int vConflito = 0;
-    int vCapacidade = 0;
-    for (int oc = 0; oc < static_cast<int>(inst.ocorrencias.size()); ++oc) {
-        const int s = best.alocacao[oc];
-        const auto& occ = inst.ocorrencias[oc];
-        if (s < 0 || s >= static_cast<int>(inst.salas.size())) {
-            ++vNaoAlocada;
-            continue;
-        }
-        if (!std::binary_search(occ.salasPermitidas.begin(), occ.salasPermitidas.end(), s)) {
-            ++vForaDominio;
-        }
-        if (!tipoPermitido(occ, inst.salas[s])) {
-            ++vTipo;
-        }
-        const auto& turma = inst.turmas[occ.idxTurma];
-        const int demandaCapacidade = turma.inscritos > 0 ? turma.inscritos : turma.vagas;
-        if (inst.salas[s].capacidade > 0 &&
-            demandaCapacidade > inst.salas[s].capacidade) {
-            ++vCapacidade;
-        }
-    }
-    for (int slot = 0; slot < best.numeroSlots(); ++slot) {
-        for (int sala = 0; sala < static_cast<int>(inst.salas.size()); ++sala) {
-            int count = 0;
-            for (int oc = 0; oc < static_cast<int>(best.alocacao.size()); ++oc) {
-                if (best.slotDaOcorrencia[oc] == slot && best.alocacao[oc] == sala) ++count;
-            }
-            if (count > 1) vConflito += count - 1;
-        }
-    }
 
     imprimirRelatorio("Relatorio da solucao gerada", computarRelatorio(best, inst, cfg), cfg);
 

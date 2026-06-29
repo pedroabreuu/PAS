@@ -40,6 +40,8 @@ int main() {
     RelatorioParse rel;
     Instancia inst = parse(caminhos, &rel);
 
+    definirNormalizadoresPorRange(inst, cfg);
+
     const int nOcc = static_cast<int>(inst.ocorrencias.size());
     std::cout << "Ocorrencias na instancia (grad_instancia): " << nOcc << '\n';
 

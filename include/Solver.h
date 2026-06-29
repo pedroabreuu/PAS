@@ -9,17 +9,20 @@ enum class Metaheuristica { VNS, ILS };
 
 struct SolverConfig {
     int seed = 873654221;
-    int maxIters = 3000;
-    int maxNoImprove = 1500;
+    int maxIters = 10000;
+    int maxNoImprove = 4000;
     int shakeStrength = 4;
     int verbose = 1;
 
     Metaheuristica metodo = Metaheuristica::ILS;
-    int numStarts = 3;
+    int numStarts = 20;
     double tempoLimiteSegundos = 0;
     double probAceitarPioraILS = 0.05;
     bool normalizarCustosSuaves = true;
     int escalaNormalizacao = 10000;
+
+    std::string arquivoSementes = "Sementes_Taillard.txt";
+    bool sortearSementes = true;
 
     int ilsReinicioSemMelhora = 0;
 
@@ -33,6 +36,8 @@ struct SolverConfig {
     int pesoCapacidadeExcesso = 10;
 
     int penalidadeDistDesconhecida = 3000;
+
+    bool normalizadorPorRange = true;
     int normalizadorConsistencia = 2000;
     int normalizadorDistancia = 50000;
     int normalizadorCapacidade = 10000;
@@ -74,6 +79,7 @@ struct RelatorioCusto {
     int turmasTipoUnico = 0;
 };
 
+void definirNormalizadoresPorRange(const Instancia& inst, SolverConfig& cfg);
 RelatorioCusto computarRelatorio(const Solucao& sol, const Instancia& inst, const SolverConfig& cfg);
 void avaliarSolucao(Solucao& sol, const Instancia& inst, const SolverConfig& cfg);
 Solucao construirSolucaoInicialGulosa(const Instancia& inst, const SolverConfig& cfg);
