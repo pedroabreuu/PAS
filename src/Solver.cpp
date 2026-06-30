@@ -13,6 +13,8 @@
 #include <vector>
 #include "Utils.h"
 
+constexpr int K_MAX_VNS = 3;
+
 namespace {
 
 struct SalaCandidata {
@@ -562,120 +564,128 @@ void RVND(Solucao& sol, EvalState& st, const Instancia& inst, const SolverConfig
     }
 }
 
-bool repararOcorrencia(int oc, Solucao& sol, EvalState& st, const Instancia& inst, const SolverConfig& cfg, const SolverCache& cache, std::mt19937& gen) {
-    const int slot = cache.slotDaOcorrencia[oc];
-    struct CandidatoRepair {
-        int sala = -1;
-        Delta delta;
-    };
-
-    std::vector<CandidatoRepair> candidatos;
-    candidatos.reserve(cache.salasCompativeisPorOc[oc].size());
-    for (int s : cache.salasCompativeisPorOc[oc]) {
-        if (!sol.slotLivre(slot, s)) continue;
-        candidatos.push_back({s, avaliarDeltaRelocate(oc, s, sol, st, inst, cfg, cache)});
-    }
-    if (candidatos.empty()) return false;
-
-    std::sort(candidatos.begin(), candidatos.end(), [](const CandidatoRepair& a, const CandidatoRepair& b) {
-        return melhorQuePar(a.delta.dInv, a.delta.dCusto, b.delta.dInv, b.delta.dCusto);
-    });
-    const int rcl = std::min<int>(3, static_cast<int>(candidatos.size()));
-    std::uniform_int_distribution<int> pick(0, rcl - 1);
-    aplicarAtribuicao(oc, candidatos[pick(gen)].sala, sol, st, inst, cfg, cache);
-    return true;
-}
-
-void destroyRepairAleatorio(Solucao& sol, EvalState& st, const Instancia& inst, const SolverConfig& cfg, const SolverCache& cache, std::mt19937& gen, int quantidade) {
+void perturbRandomRelocate(Solucao& sol, EvalState& st, const Instancia& inst, const SolverConfig& cfg, const SolverCache& cache, std::mt19937& gen) {
     const int nOcc = static_cast<int>(inst.ocorrencias.size());
+
     if (nOcc <= 0) return;
 
-    quantidade = std::max(1, std::min(quantidade, nOcc));
-    std::vector<int> escolhidas(nOcc);
-    std::iota(escolhidas.begin(), escolhidas.end(), 0);
-    for (int i = 0; i < quantidade; ++i) {
-        std::uniform_int_distribution<int> pick(i, nOcc - 1);
-        std::swap(escolhidas[i], escolhidas[pick(gen)]);
-    }
-    escolhidas.resize(quantidade);
+    std::uniform_int_distribution<int> distOc(0, nOcc - 1);
+    const int oc = distOc(gen);
+    const auto& cand = cache.salasCompativeisPorOc[oc];
 
-    for (int oc : escolhidas) {
-        aplicarAtribuicao(oc, -1, sol, st, inst, cfg, cache);
-    }
+    if (cand.empty()) return;
 
-    std::stable_sort(escolhidas.begin(), escolhidas.end(), [&](int a, int b) {
-        if (cache.qtdSalasCompativeis[a] != cache.qtdSalasCompativeis[b]) {
-            return cache.qtdSalasCompativeis[a] < cache.qtdSalasCompativeis[b];
-        }
-        return a < b;
-    });
+    const int slot = cache.slotDaOcorrencia[oc];
+    const int salaAtual = sol.alocacao[oc];
 
-    for (int oc : escolhidas) {
-        repararOcorrencia(oc, sol, st, inst, cfg, cache, gen);
+    std::uniform_int_distribution<int> pick(0, static_cast<int>(cand.size()) - 1);
+    const int inicio = pick(gen);
+
+    for (int off = 0; off < static_cast<int>(cand.size()); ++off) {
+        const int s = cand[(inicio + off) % cand.size()];
+        if (s == salaAtual) continue;
+        if (!sol.slotLivre(slot, s)) continue;
+        aplicarAtribuicao(oc, s, sol, st, inst, cfg, cache);
+        return;
     }
 }
 
-void movimentosAleatorios(Solucao& sol, EvalState& st, const Instancia& inst, const SolverConfig& cfg, const SolverCache& cache, std::mt19937& gen, int intensidade) {
-    if (intensidade <= 0) return;
-
-    std::uniform_int_distribution<int> distOc(0, static_cast<int>(inst.ocorrencias.size()) - 1);
-    std::uniform_int_distribution<int> modo(0, 1);
-
-    std::vector<int> slotsNaoVazios;
-    slotsNaoVazios.reserve(cache.ocorrenciasPorSlot.size());
+void perturbRandomSwapSlot(Solucao& sol, EvalState& st, const Instancia& inst, const SolverConfig& cfg, const SolverCache& cache, std::mt19937& gen) {
+    std::vector<int> slotsValidos;
     for (int k = 0; k < static_cast<int>(cache.ocorrenciasPorSlot.size()); ++k) {
-        if (cache.ocorrenciasPorSlot[k].size() >= 2) slotsNaoVazios.push_back(k);
+        if (cache.ocorrenciasPorSlot[k].size() >= 2) slotsValidos.push_back(k);
     }
 
-    for (int rep = 0; rep < intensidade; ++rep) {
-        if (modo(gen) == 0) {
-            const int oc = distOc(gen);
-            const int salaAtual = sol.alocacao[oc];
-            const auto& cand = cache.salasCompativeisPorOc[oc];
-            if (cand.empty()) continue;
-            const int slot = cache.slotDaOcorrencia[oc];
-            std::uniform_int_distribution<int> pickInicio(0, static_cast<int>(cand.size()) - 1);
-            const int inicio = pickInicio(gen);
-            for (int off = 0; off < static_cast<int>(cand.size()); ++off) {
-                const int s = cand[(inicio + off) % cand.size()];
-                if (s == salaAtual) continue;
-                if (!sol.slotLivre(slot, s)) continue;
-                aplicarAtribuicao(oc, s, sol, st, inst, cfg, cache);
-                break;
-            }
-        } else {
-            if (slotsNaoVazios.empty()) continue;
+    if (slotsValidos.empty()) return;
 
-            std::uniform_int_distribution<int> distSlot(0, static_cast<int>(slotsNaoVazios.size()) - 1);
-            const auto& lista = cache.ocorrenciasPorSlot[slotsNaoVazios[distSlot(gen)]];
-            if (lista.size() < 2) continue;
+    std::uniform_int_distribution<int> distSlot(0, static_cast<int>(slotsValidos.size()) - 1);
+    const auto& lista = cache.ocorrenciasPorSlot[slotsValidos[distSlot(gen)]];
+    std::uniform_int_distribution<int> distIdx(0, static_cast<int>(lista.size()) - 1);
 
-            std::uniform_int_distribution<int> distIdx(0, static_cast<int>(lista.size()) - 1);
-            int i = distIdx(gen);
-            int j = distIdx(gen);
-            while (j == i) j = distIdx(gen);
+    int i = distIdx(gen);
+    int j = distIdx(gen);
 
-            const int a = lista[i];
-            const int b = lista[j];
-            const int sa = sol.alocacao[a];
-            const int sb = sol.alocacao[b];
-            if (sa < 0 || sb < 0 || sa == sb) continue;
-            if (!salaCompativelNoCache(a, sb, cache)) continue;
-            if (!salaCompativelNoCache(b, sa, cache)) continue;
+    while (j == i) j = distIdx(gen);
 
-            aplicarAtribuicao(a, -1, sol, st, inst, cfg, cache);
-            aplicarAtribuicao(b, -1, sol, st, inst, cfg, cache);
-            aplicarAtribuicao(a, sb, sol, st, inst, cfg, cache);
-            aplicarAtribuicao(b, sa, sol, st, inst, cfg, cache);
-        }
-    }
+    const int a = lista[i], b = lista[j];
+    const int sa = sol.alocacao[a], sb = sol.alocacao[b];
+
+    if (sa < 0 || sb < 0 || sa == sb) return;
+    if (!salaCompativelNoCache(a, sb, cache)) return;
+    if (!salaCompativelNoCache(b, sa, cache)) return;
+    aplicarAtribuicao(a, -1, sol, st, inst, cfg, cache);
+    aplicarAtribuicao(b, -1, sol, st, inst, cfg, cache);
+    aplicarAtribuicao(a, sb, sol, st, inst, cfg, cache);
+    aplicarAtribuicao(b, sa, sol, st, inst, cfg, cache);
 }
+
+void perturbRandomMoveClassBlock(Solucao& sol, EvalState& st, const Instancia& inst, const SolverConfig& cfg, const SolverCache& cache, std::mt19937& gen) {
+    const int nTurmas = static_cast<int>(inst.turmas.size());
+    if (nTurmas <= 0) return;
+
+    std::uniform_int_distribution<int> distT(0, nTurmas - 1);
+    const int t = distT(gen);
+    const auto& occsTurma = sol.ocorrenciasDaTurma[t];
+
+    if (occsTurma.empty()) return;
+
+    std::vector<std::vector<int>> occsPorTipo(NUM_TIPOS);
+    for (int oc : occsTurma) {
+        occsPorTipo[tipoIdx(cache.tipoOcorrencia[oc])].push_back(oc);
+    }
+
+    std::vector<int> tiposValidos;
+    for (int ti = 0; ti < NUM_TIPOS; ++ti) {
+        if (occsPorTipo[ti].size() >= 2) tiposValidos.push_back(ti);
+    }
+    if (tiposValidos.empty()) return;
+    std::uniform_int_distribution<int> distTi(0, static_cast<int>(tiposValidos.size()) - 1);
+    const auto& occs = occsPorTipo[tiposValidos[distTi(gen)]];
+
+    std::vector<int> salasComuns = cache.salasCompativeisPorOc[occs.front()];
+    for (std::size_t p = 1; p < occs.size(); ++p) {
+        std::vector<int> inter;
+        const auto& cand = cache.salasCompativeisPorOc[occs[p]];
+        std::set_intersection(salasComuns.begin(), salasComuns.end(),cand.begin(), cand.end(), std::back_inserter(inter));
+        salasComuns.swap(inter);
+        if (salasComuns.empty()) return;
+    }
+
+    std::vector<int> salasValidas;
+    for (int s : salasComuns) {
+        bool ok = true;
+        for (int oc : occs) {
+            const int slot = cache.slotDaOcorrencia[oc];
+            const int ocupante = sol.ocupacao[slot][s];
+            if (ocupante != -1 && ocupante != oc) { ok = false; break; }
+        }
+        if (ok) salasValidas.push_back(s);
+    }
+    if (salasValidas.empty()) return;
+
+    std::uniform_int_distribution<int> distS(0, static_cast<int>(salasValidas.size()) - 1);
+    const int novaSala = salasValidas[distS(gen)];
+
+    for (int oc : occs) aplicarAtribuicao(oc, -1, sol, st, inst, cfg, cache);
+    for (int oc : occs) aplicarAtribuicao(oc, novaSala, sol, st, inst, cfg, cache);
+}
+
+using PerturbFunc = void(*)(Solucao&, EvalState&, const Instancia&, const SolverConfig&, const SolverCache&, std::mt19937&);
 
 void shake(Solucao& sol, EvalState& st, const Instancia& inst, const SolverConfig& cfg, const SolverCache& cache, std::mt19937& gen, int intensidade) {
-    if (intensidade > 0) {
-        destroyRepairAleatorio(sol, st, inst, cfg, cache, gen, intensidade);
+    if (intensidade <= 0) return;
+
+    static const std::vector<PerturbFunc> perturbacoes = {
+        perturbRandomRelocate,
+        perturbRandomSwapSlot,
+        perturbRandomMoveClassBlock
+    };
+
+    std::uniform_int_distribution<int> pick(0, static_cast<int>(perturbacoes.size()) - 1);
+
+    for (int i = 0; i < intensidade; ++i) {
+        perturbacoes[pick(gen)](sol, st, inst, cfg, cache, gen);
     }
-    movimentosAleatorios(sol, st, inst, cfg, cache, gen, intensidade);
 
     sol.inviabilidades = st.inviabilidadesTotais;
     sol.custo = st.custoTotal;
@@ -826,23 +836,38 @@ Solucao construirSolucaoInicialGulosa(const Instancia& inst, const SolverConfig&
 
 bool VNS(Solucao& corrente, EvalState& correnteState, const Instancia& inst, const SolverConfig& cfg,
                  const SolverCache& cache, std::mt19937& gen, SolverStats& stats) {
-    for (int k = 1; k <= 3; ++k) {
+
+    //const int kMax = 4;
+    
+    int k = 1;
+    bool encontrouMelhora = false;
+
+    while(k <= K_MAX_VNS) {
         Solucao cand = corrente;
         EvalState candState = correnteState;
 
-        shake(cand, candState, inst, cfg, cache, gen, k * cfg.shakeStrength);
+        shake(cand, candState, inst, cfg, cache, gen, k);
         ++stats.perturbacoes;
+
         RVND(cand, candState, inst, cfg, cache, gen);
+        
         cand.inviabilidades = candState.inviabilidadesTotais;
         cand.custo = candState.custoTotal;
 
         if (melhorQuePar(cand.inviabilidades, cand.custo, corrente.inviabilidades, corrente.custo)) {
             corrente = std::move(cand);
             correnteState = std::move(candState);
-            return true;
+
+            encontrouMelhora = true;
+
+            k = 1;
+        } else {
+            ++k;
         }
+
     }
-    return false;
+
+    return encontrouMelhora;
 }
 
 bool ILS(Solucao& corrente, EvalState& correnteState, const Instancia& inst, const SolverConfig& cfg,
@@ -999,7 +1024,7 @@ std::pair<Solucao, SolverStats> executar(const Instancia& inst, const SolverConf
         const bool ehILS = (cfg.metodo == Metaheuristica::ILS);
         const int itersPorNivel = cfg.ilsItersPorNivel > 0 ? cfg.ilsItersPorNivel : std::max(1, cfg.maxNoImprove / 10);
         const int shakeMax = cfg.ilsShakeMax > 0 ? cfg.ilsShakeMax : 3 * cfg.shakeStrength;
-        const int reinicioPeriodo = cfg.ilsReinicioSemMelhora == 0 ? std::max(1, cfg.maxNoImprove / 3) : cfg.ilsReinicioSemMelhora;
+        const int reinicioPeriodo = cfg.ilsReinicioSemMelhora == 0 ? std::max(1, cfg.maxNoImprove / 5) : cfg.ilsReinicioSemMelhora;
 
         int semMelhora = 0;
         for (int iter = 1; iter <= cfg.maxIters && semMelhora < cfg.maxNoImprove; ++iter) {
@@ -1022,6 +1047,17 @@ std::pair<Solucao, SolverStats> executar(const Instancia& inst, const SolverConf
                 semMelhora = 0;
             } else {
                 ++semMelhora;
+            }
+
+            if (!ehILS && reinicioPeriodo > 0 && semMelhora > 0 && (semMelhora % reinicioPeriodo == 0)) {
+              corrente = melhorStart;
+              correnteState = melhorStartState;
+              
+              shake(corrente, correnteState, inst, cfg, cache, gen, 4*K_MAX_VNS);
+              RVND(corrente, correnteState, inst, cfg, cache, gen);
+
+              corrente.inviabilidades = correnteState.inviabilidadesTotais;
+              corrente.custo = correnteState.custoTotal;
             }
 
             if (ehILS && reinicioPeriodo > 0 && semMelhora > 0 &&
