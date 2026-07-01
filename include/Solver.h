@@ -65,6 +65,7 @@ struct RelatorioCusto {
     int conflitos = 0;
     int foraDominio = 0;
     int tipoIncompativel = 0;
+    int acessibilidadeViolada = 0;
     int capacidadeExcedida = 0;
 
     int custoConsistencia = 0;

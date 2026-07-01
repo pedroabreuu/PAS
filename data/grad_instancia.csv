@@ -1,410 +1,410 @@
-ID_TURMA,TERMO,CÓD. UC,UNIDADE CURRICULAR,TURMA,Vagas,Inscritos,DOCENTE,DEPARTAMENTO,TIPO_SALA,Dia,Hora
-1,TERMO 1,2672,"Ciência, Tecnologia e Sociedade (2)",IA,65,52,Pereira,BCT,SL,seg,15:30
-2,TERMO 1,2672,"Ciência, Tecnologia e Sociedade (2)",IB,65,55,Pereira,BCT,SL,seg,13:30
-3,TERMO 1,2672,"Ciência, Tecnologia e Sociedade (2)",IC,65,50,Walter,BCT,SL,seg,15:30
-4,TERMO 1,2672,"Ciência, Tecnologia e Sociedade (2)",ID,65,52,Evandro,BCT,SL,seg,13:30
-5,TERMO 1,2672,"Ciência, Tecnologia e Sociedade (2)",IE,25,18,Luciana,BCT,SL,seg,13:30
-6,TERMO 1,2672,"Ciência, Tecnologia e Sociedade (2)",IF,25,14,Luciana,BCT,SL,seg,15:30
-7,TERMO 1,2672,"Ciência, Tecnologia e Sociedade (2)",,65,57,Walter,BCT,SL,seg,19:00
-8,TERMO 1,2672,"Ciência, Tecnologia e Sociedade (2)",NB,65,49,Evandro,BCT,SL,seg,19:00
-9,TERMO 1,2672,"Ciência, Tecnologia e Sociedade (2)",NC,25,20,Luciana,BCT,SL,seg,19:00
-10,TERMO 1,5704,Química Geral (4),IA,50,50,Dayane,BCT,SL,qua,13:30
-10,TERMO 1,5704,Química Geral (4),IA,50,50,Dayane,BCT,SL,sex,15:30
-11,TERMO 1,5704,Química Geral (4),IB,50,51,Dayane,BCT,SL,qua,15:30
-11,TERMO 1,5704,Química Geral (4),IB,50,51,Dayane,BCT,SL,sex,13:30
-12,TERMO 1,5704,Química Geral (4),IC,50,47,Silvia,BCT,SL,qua,13:30
-12,TERMO 1,5704,Química Geral (4),IC,50,47,Silvia,BCT,SL,sex,15:30
-13,TERMO 1,5704,Química Geral (4),ID,50,49,Elias,BCT,SL,qua,15:30
-13,TERMO 1,5704,Química Geral (4),ID,50,49,Elias,BCT,SL,sex,13:30
-14,TERMO 1,5704,Química Geral (4),IE,65,36,Silvia,BCT,SL,qua,8:00
-14,TERMO 1,5704,Química Geral (4),IE,65,36,Silvia,BCT,SL,sex,10:00
-15,TERMO 1,5704,Química Geral (4),,50,51,Hugo,BCT,SL,qua,21:00
-15,TERMO 1,5704,Química Geral (4),,50,51,Hugo,BCT,SL,sex,21:00
-16,TERMO 1,5704,Química Geral (4),NB,50,48,Maraísa,BCT,SL,qua,21:00
-16,TERMO 1,5704,Química Geral (4),NB,50,48,Maraísa,BCT,SL,sex,19:00
-17,TERMO 1,5704,Química Geral (4),NC,65,36,Hugo,BCT,SL,qua,19:00
-17,TERMO 1,5704,Química Geral (4),NC,65,36,Hugo,BCT,SL,sex,19:00
-18,TERMO 1,9394,Lógica de Programação (4),IA,50,50,Ana,BCC,LABINFO,ter,13:30
-18,TERMO 1,9394,Lógica de Programação (4),IA,50,50,Ana,BCC,LABINFO,qui,15:30
-19,TERMO 1,9394,Lógica de Programação (4),IB,50,51,Arlindo,BCC,LABINFO,ter,15:30
-19,TERMO 1,9394,Lógica de Programação (4),IB,50,51,Arlindo,BCC,LABINFO,qui,13:30
-20,TERMO 1,9394,Lógica de Programação (4),IC,50,47,Quiles,BCC,LABINFO,ter,13:30
-20,TERMO 1,9394,Lógica de Programação (4),IC,50,47,Quiles,BCC,LABINFO,qui,15:30
-21,TERMO 1,9394,Lógica de Programação (4),ID,50,49,Marcio,BCC,LABINFO,ter,15:30
-21,TERMO 1,9394,Lógica de Programação (4),ID,50,49,Marcio,BCC,LABINFO,qui,13:30
-22,TERMO 1,9394,Lógica de Programação (4),IE,50,16,Quiles,BCC,LABINFO,ter,8:00
-22,TERMO 1,9394,Lógica de Programação (4),IE,50,16,Quiles,BCC,LABINFO,qui,10:00
-23,TERMO 1,9394,Lógica de Programação (4),,50,49,Ana,BCC,LABINFO,ter,19:00
-23,TERMO 1,9394,Lógica de Programação (4),,50,49,Ana,BCC,LABINFO,qui,21:00
-24,TERMO 1,9394,Lógica de Programação (4),NB,50,48,Marcio,BCC,LABINFO,ter,21:00
-24,TERMO 1,9394,Lógica de Programação (4),NB,50,48,Marcio,BCC,LABINFO,qui,19:00
-25,TERMO 1,9394,Lógica de Programação (4),NC,50,14,Kimura,BCC,LABINFO,ter,19:00
-25,TERMO 1,9394,Lógica de Programação (4),NC,50,14,Kimura,BCC,LABINFO,qui,21:00
-26,TERMO 1,5703,Fundamentos de Biologia Moderna (4),IAC,110,106,Fernando,BCT,SL,seg,13:30
-26,TERMO 1,5703,Fundamentos de Biologia Moderna (4),IAC,110,106,Fernando,BCT,SL,qua,15:30
-27,TERMO 1,5703,Fundamentos de Biologia Moderna (4),IBD,110,106,André,BCT,SL,seg,15:30
-27,TERMO 1,5703,Fundamentos de Biologia Moderna (4),IBD,110,106,André,BCT,SL,qua,13:30
-28,TERMO 1,5703,Fundamentos de Biologia Moderna (4),NAB,110,110,Fernando,BCT,SL,seg,21:00
-28,TERMO 1,5703,Fundamentos de Biologia Moderna (4),NAB,110,110,Fernando,BCT,SL,qua,19:00
-29,TERMO 1,5702,Cálculo em uma variável (6),IA,50,50,Renato,BMC,SL,ter,15:30
-29,TERMO 1,5702,Cálculo em uma variável (6),IA,50,50,Renato,BMC,SL,qui,13:30
-29,TERMO 1,5702,Cálculo em uma variável (6),IA,50,50,Renato,BMC,SL,sex,13:30
-30,TERMO 1,5702,Cálculo em uma variável (6),IB,50,51,Erwin,BMC,SL,ter,13:30
-30,TERMO 1,5702,Cálculo em uma variável (6),IB,50,51,Erwin,BMC,SL,qui,15:30
-30,TERMO 1,5702,Cálculo em uma variável (6),IB,50,51,Erwin,BMC,SL,sex,15:30
-31,TERMO 1,5702,Cálculo em uma variável (6),IC,50,47,Alfredo / Cláudia Aline,BMC,SL,ter,15:30
-31,TERMO 1,5702,Cálculo em uma variável (6),IC,50,47,Alfredo / Cláudia Aline,BMC,SL,qui,13:30
-31,TERMO 1,5702,Cálculo em uma variável (6),IC,50,47,Alfredo / Cláudia Aline,BMC,SL,sex,13:30
-32,TERMO 1,5702,Cálculo em uma variável (6),ID,50,49,Thadeu,BMC,SL,ter,13:30
-32,TERMO 1,5702,Cálculo em uma variável (6),ID,50,49,Thadeu,BMC,SL,qui,15:30
-32,TERMO 1,5702,Cálculo em uma variável (6),ID,50,49,Thadeu,BMC,SL,sex,15:30
-33,TERMO 1,5702,Cálculo em uma variável (6),IE,40,33,Mattos,BMC,SL,ter,15:30
-33,TERMO 1,5702,Cálculo em uma variável (6),IE,40,33,Mattos,BMC,SL,qui,13:30
-33,TERMO 1,5702,Cálculo em uma variável (6),IE,40,33,Mattos,BMC,SL,sex,13:30
-34,TERMO 1,5702,Cálculo em uma variável (6),,60,58,Alfredo,BMC,SL,ter,21:00
-34,TERMO 1,5702,Cálculo em uma variável (6),,60,58,Alfredo,BMC,SL,qui,19:00
-34,TERMO 1,5702,Cálculo em uma variável (6),,60,58,Alfredo,BMC,SL,sex,19:00
-35,TERMO 1,5702,Cálculo em uma variável (6),NB,60,56,Karen,BMC,SL,ter,19:00
-35,TERMO 1,5702,Cálculo em uma variável (6),NB,60,56,Karen,BMC,SL,qui,21:00
-35,TERMO 1,5702,Cálculo em uma variável (6),NB,60,56,Karen,BMC,SL,sex,21:00
-37,TERMO 3,2475,Álgebra Linear (4),IA,65,31,Angelo,BMC,SL,ter,15:30
-37,TERMO 3,2475,Álgebra Linear (4),IA,65,31,Angelo,BMC,SL,sex,13:30
-38,TERMO 3,2475,Álgebra Linear (4),IB,65,36,Macedo,BMC,SL,qua,13:30
-38,TERMO 3,2475,Álgebra Linear (4),IB,65,36,Macedo,BMC,SL,sex,15:30
-39,TERMO 3,2475,Álgebra Linear (4),IC,65,64,Vanessa,BMC,SL,ter,10:00
-39,TERMO 3,2475,Álgebra Linear (4),IC,65,64,Vanessa,BMC,SL,sex,8:00
-40,TERMO 3,2475,Álgebra Linear (4),,65,30,AnaMoreira,BMC,SL,ter,21:00
-40,TERMO 3,2475,Álgebra Linear (4),,65,30,AnaMoreira,BMC,SL,sex,19:00
-41,TERMO 3,2475,Álgebra Linear (4),NB,65,22,AnaMoreira,BMC,SL,qua,19:00
-41,TERMO 3,2475,Álgebra Linear (4),NB,65,22,AnaMoreira,BMC,SL,sex,21:00
-42,TERMO 3,5359,Cálculo em várias variáveis (4),IA,65,14,Robson,BMC,SL,seg,13:30
-42,TERMO 3,5359,Cálculo em várias variáveis (4),IA,65,14,Robson,BMC,SL,qua,15:30
-43,TERMO 3,5359,Cálculo em várias variáveis (4),IB,65,13,Robson,BMC,SL,seg,15:30
-43,TERMO 3,5359,Cálculo em várias variáveis (4),IB,65,13,Robson,BMC,SL,qui,13:30
-44,TERMO 3,5359,Cálculo em várias variáveis (4),IC,65,21,Leandro,BMC,SL,seg,8:00
-44,TERMO 3,5359,Cálculo em várias variáveis (4),IC,65,21,Leandro,BMC,SL,qua,10:00
-45,TERMO 3,5359,Cálculo em várias variáveis (4),ID,65,63,Pedro,BMC,SL,seg,10:00
-45,TERMO 3,5359,Cálculo em várias variáveis (4),ID,65,63,Pedro,BMC,SL,qui,8:00
-46,TERMO 3,5359,Cálculo em várias variáveis (4),,65,64,DanielaOliveira,BMC,SL,seg,19:00
-46,TERMO 3,5359,Cálculo em várias variáveis (4),,65,64,DanielaOliveira,BMC,SL,qua,21:00
-47,TERMO 3,5359,Cálculo em várias variáveis (4),NB,65,61,DanielaOliveira,BMC,SL,seg,21:00
-47,TERMO 3,5359,Cálculo em várias variáveis (4),NB,65,61,DanielaOliveira,BMC,SL,qui,19:00
-48,TERMO 3,2609,Probabilidade e Estatística (4),IA,65,65,Luzia,BMC,LABINFO,seg,15:30
-48,TERMO 3,2609,Probabilidade e Estatística (4),IA,65,65,Luzia,BMC,SL,qui,13:30
-49,TERMO 3,2609,Probabilidade e Estatística (4),IB,65,59,Luzia,BMC,LABINFO,seg,13:30
-49,TERMO 3,2609,Probabilidade e Estatística (4),IB,65,59,Luzia,BMC,SL,qua,15:30
-50,TERMO 3,2609,Probabilidade e Estatística (4),,65,65,Samia,BMC,SL,seg,21:00
-50,TERMO 3,2609,Probabilidade e Estatística (4),,65,65,Samia,BMC,LABINFO,qui,19:00
-51,TERMO 3,2609,Probabilidade e Estatística (4),NB,65,60,Samia,BMC,SL,seg,19:00
-51,TERMO 3,2609,Probabilidade e Estatística (4),NB,65,60,Samia,BMC,LABINFO,qua,21:00
-52,TERMO 3,4348,Fenômenos do Contínuo (4),IA,65,66,Manuel,BCT,SL,ter,15:30
-52,TERMO 3,4348,Fenômenos do Contínuo (4),IA,65,66,Manuel,BCT,SL,sex,13:30
-53,TERMO 3,4348,Fenômenos do Contínuo (4),IB,65,36,Manuel,BCT,SL,qua,13:30
-53,TERMO 3,4348,Fenômenos do Contínuo (4),IB,65,36,Manuel,BCT,SL,sex,15:30
-54,TERMO 3,4348,Fenômenos do Contínuo (4),,65,38,Thaciana,BCT,SL,ter,21:00
-54,TERMO 3,4348,Fenômenos do Contínuo (4),,65,38,Thaciana,BCT,SL,sex,19:00
-55,TERMO 3,4348,Fenômenos do Contínuo (4),NB,65,12,Thaciana,BCT,SL,qua,19:00
-55,TERMO 3,4348,Fenômenos do Contínuo (4),NB,65,12,Thaciana,BCT,SL,sex,21:00
-56,TERMO 3,4538,Fenômenos Mecânicos Experimental (2),IA,15,13,Espirito,BCT,SL,ter,13:30
-57,TERMO 3,4538,Fenômenos Mecânicos Experimental (2),IB,15,17,Espirito,BCT,SL,ter,15:30
-58,TERMO 3,4538,Fenômenos Mecânicos Experimental (2),IC,15,4,Nirton,BCT,SL,qui,8:00
-59,TERMO 3,4538,Fenômenos Mecânicos Experimental (2),ID,15,10,Nirton,BCT,SL,qui,10:00
-60,TERMO 3,4538,Fenômenos Mecânicos Experimental (2),,15,14,Antonelli,BCT,SL,ter,19:00
-61,TERMO 3,4538,Fenômenos Mecânicos Experimental (2),NB,15,11,Antonelli,BCT,SL,ter,21:00
-62,TERMO 3,4772,Química Inorgânica (4),I,25,9,Raquel,BCT,LAB,qua,13:30
-62,TERMO 3,4772,Química Inorgânica (4),I,25,9,Raquel,BCT,LAB,sex,15:30
-63,TERMO 3,4772,Química Inorgânica (4),N,25,7,Raquel,BCT,SL,qua,19:00
-63,TERMO 3,4772,Química Inorgânica (4),N,25,7,Raquel,BCT,LAB,sex,21:00
-64,TERMO 3,4350,Química Orgânica (4),I,65,31,Joao,BCT,SL,ter,13:30
-64,TERMO 3,4350,Química Orgânica (4),I,65,31,Joao,BCT,SL,qui,15:30
-65,TERMO 3,4350,Química Orgânica (4),N,65,22,Joao,BCT,SL,ter,19:00
-65,TERMO 3,4350,Química Orgânica (4),N,65,22,Joao,BCT,SL,qui,21:00
-66,TERMO 3,2833,Algoritmos e Estruturas de Dados II (4),IA,50,58,Alvaro,BCC,LABINFO,ter,13:30
-66,TERMO 3,2833,Algoritmos e Estruturas de Dados II (4),IA,50,58,Alvaro,BCC,LABINFO,qui,15:30
-67,TERMO 3,2833,Algoritmos e Estruturas de Dados II (4),IB,50,45,Reginaldo,BCC,LABINFO,ter,13:30
-67,TERMO 3,2833,Algoritmos e Estruturas de Dados II (4),IB,50,45,Reginaldo,BCC,SL,qui,15:30
-68,TERMO 3,2833,Algoritmos e Estruturas de Dados II (4),N,50,60,Alvaro,BCC,LABINFO,ter,19:00
-68,TERMO 3,2833,Algoritmos e Estruturas de Dados II (4),N,50,60,Alvaro,BCC,SL,qui,21:00
-69,TERMO 3,5746,Física Geral (4),I,65,26,Espirito,BCT,SL,seg,15:30
-69,TERMO 3,5746,Física Geral (4),I,65,26,Espirito,BCT,SL,qui,13:30
-70,TERMO 3,5746,Física Geral (4),N,65,22,Fabiano,BCT,SL,seg,21:00
-70,TERMO 3,5746,Física Geral (4),N,65,22,Fabiano,BCT,SL,qui,19:00
-71,TERMO 3,5739,Biologia do Desenvolvimento (2),I,65,13,Luciane,BBT,SL,seg,10:00
-72,TERMO 3,5739,Biologia do Desenvolvimento (2),N,65,14,Luciane,BBT,SL,qui,19:00
-73,TERMO 3,5741,Biologia Molecular da Célula (4),I,65,19,Claudia,BBT,SL,ter,15:30
-73,TERMO 3,5741,Biologia Molecular da Célula (4),I,65,19,Claudia,BBT,SL,sex,13:30
-74,TERMO 3,5741,Biologia Molecular da Célula (4),N,65,18,Claudia,BBT,SL,ter,21:00
-74,TERMO 3,5741,Biologia Molecular da Célula (4),N,65,18,Claudia,BBT,SL,sex,19:00
-75,TERMO 3,5845,Laboratório de Bioquímica (4),I,25,17,Martin,BBT,SL,ter,8:00
-75,TERMO 3,5845,Laboratório de Bioquímica (4),I,25,17,Martin,BBT,LAB,ter,10:00
-76,TERMO 3,5845,Laboratório de Bioquímica (4),N,25,17,Martin,BBT,SL,qui,19:00
-76,TERMO 3,5845,Laboratório de Bioquímica (4),N,25,17,Martin,BBT,LAB,qui,21:00
-77,TERMO 3,5121,Microbiologia Aplicada e Industrial (4),I,50,17,Elisa,BBT,SL,qua,13:30
-77,TERMO 3,5121,Microbiologia Aplicada e Industrial (4),I,50,17,Elisa,BBT,SL,sex,15:30
-78,TERMO 3,5121,Microbiologia Aplicada e Industrial (4),N,50,14,Elisa,BBT,SL,qua,19:00
-78,TERMO 3,5121,Microbiologia Aplicada e Industrial (4),N,50,14,Elisa,BBT,SL,sex,21:00
-79,TERMO 3,8215,Fisiologia Humana I (4),IA,40,39,Tatiana,BBT,SL,seg,13:30
-79,TERMO 3,8215,Fisiologia Humana I (4),IA,40,39,Tatiana,BBT,SL,qua,15:30
-80,TERMO 3,8215,Fisiologia Humana I (4),IB,40,17,Flavio,BBT,SL,seg,13:30
-80,TERMO 3,8215,Fisiologia Humana I (4),IB,40,17,Flavio,BBT,SL,qua,15:30
-81,TERMO 3,8215,Fisiologia Humana I (4),N,40,39,Flavio,BBT,SL,seg,19:00
-81,TERMO 3,8215,Fisiologia Humana I (4),N,40,39,Flavio,BBT,SL,qua,21:00
-82,TERMO 3,5414,Algoritmos em Bioinformática (4),IA,50,35,Shida,BBT,LAB,qua,8:00
-82,TERMO 3,5414,Algoritmos em Bioinformática (4),IA,50,35,Shida,BBT,LAB,sex,10:00
-83,TERMO 3,5414,Algoritmos em Bioinformática (4),IB,50,44,Shida,BBT,LAB,seg,8:00
-83,TERMO 3,5414,Algoritmos em Bioinformática (4),IB,50,44,Shida,BBT,LAB,qua,10:00
-84,TERMO 3,5414,Algoritmos em Bioinformática (4),,50,34,Martini,BBT,LAB,ter,19:00
-84,TERMO 3,5414,Algoritmos em Bioinformática (4),,50,34,Martini,BBT,LAB,qui,21:00
-85,TERMO 3,5414,Algoritmos em Bioinformática (4),NB,50,20,Martini,BBT,LAB,ter,21:00
-85,TERMO 3,5414,Algoritmos em Bioinformática (4),NB,50,20,Martini,BBT,LAB,sex,19:00
-86,TERMO 3,3518,Circuitos Digitais (4),IA,30,35,Fernanda,EC;EB,LAB,qua,13:30
-86,TERMO 3,3518,Circuitos Digitais (4),IA,30,35,Fernanda,EC;EB,SL,sex,15:30
-87,TERMO 3,3518,Circuitos Digitais (4),IB,20,19,Thaina,EC;EB,SL,qua,13:30
-87,TERMO 3,3518,Circuitos Digitais (4),IB,20,19,Thaina,EC;EB,LAB,sex,15:30
-88,TERMO 3,3518,Circuitos Digitais (4),IE,20,19,Thaina,EC;EB,SL,qua,8:00
-88,TERMO 3,3518,Circuitos Digitais (4),IE,20,19,Thaina,EC;EB,LAB,sex,10:00
-89,TERMO 3,3518,Circuitos Digitais (4),IC,30,21,Cappabianco,EC;EB,SL,qua,8:00
-89,TERMO 3,3518,Circuitos Digitais (4),IC,30,21,Cappabianco,EC;EB,LAB,sex,10:00
-90,TERMO 3,3518,Circuitos Digitais (4),ID,50,47,Urban,EC;EB,SL,qua,8:00
-90,TERMO 3,3518,Circuitos Digitais (4),ID,50,47,Urban,EC;EB,LAB,sex,10:00
-91,TERMO 3,3518,Circuitos Digitais (4),N,50,54,Denise,EC;EB,SL,qua,19:00
-91,TERMO 3,3518,Circuitos Digitais (4),N,50,54,Denise,EC;EB,LAB,sex,21:00
-92,TERMO 3,4537,Tecnologia e Meio Ambiente (2),I,65,59,Marina,BCT,SL,sex,13:30
-93,TERMO 3,4537,Tecnologia e Meio Ambiente (2),N,65,43,Marina,BCT,SL,sex,19:00
-94,TERMO 5,5136,Fenômenos de Transporte (4),I,65,4,Leonardo,EM,SL,seg,13:30
-94,TERMO 5,5136,Fenômenos de Transporte (4),I,65,4,Leonardo,EM,SL,qua,15:30
-95,TERMO 5,5136,Fenômenos de Transporte (4),N,65,5,Leonardo,EM,SL,seg,19:00
-95,TERMO 5,5136,Fenômenos de Transporte (4),N,65,5,Leonardo,EM,SL,qua,21:00
-96,TERMO 5,5142,Materiais Cerâmicos (4),I,25,5,Eliandra,EM,SL,ter,13:30
-96,TERMO 5,5142,Materiais Cerâmicos (4),I,25,5,Eliandra,EM,SL,qui,15:30
-97,TERMO 5,5142,Materiais Cerâmicos (4),N,25,14,Eliandra,EM,SL,ter,19:00
-97,TERMO 5,5142,Materiais Cerâmicos (4),N,25,14,Eliandra,EM,SL,qui,21:00
-98,TERMO 5,5143,Materiais Metálicos (4),I,25,6,Danieli,EM,SL,qua,13:30
-98,TERMO 5,5143,Materiais Metálicos (4),I,25,6,Danieli,EM,SL,sex,15:30
-99,TERMO 5,5143,Materiais Metálicos (4),N,25,11,Danieli,EM,SL,qua,19:00
-99,TERMO 5,5143,Materiais Metálicos (4),N,25,11,Danieli,EM,SL,sex,21:00
-100,TERMO 5,5144,Materiais Poliméricos (4),I,25,6,Passador,EM,SL,seg,10:00
-100,TERMO 5,5144,Materiais Poliméricos (4),I,25,6,Passador,EM,SL,qui,8:00
-101,TERMO 5,5144,Materiais Poliméricos (4),N,25,14,Mauricio,EM,SL,seg,21:00
-101,TERMO 5,5144,Materiais Poliméricos (4),N,25,14,Mauricio,EM,SL,qui,19:00
-102,TERMO 5,5145,Resistência dos Materiais (4),I,65,3,Edson,EM,SL,ter,15:30
-102,TERMO 5,5145,Resistência dos Materiais (4),I,65,3,Edson,EM,SL,sex,13:30
-103,TERMO 5,5145,Resistência dos Materiais (4),N,65,10,Katia,EM,SL,ter,21:00
-103,TERMO 5,5145,Resistência dos Materiais (4),N,65,10,Katia,EM,SL,sex,19:00
-104,TERMO 5,5137,Fenômenos Eletromagnéticos Experimental (2),IC,18,15,Kelly,BCT,SL,seg,8:00
-105,TERMO 5,5137,Fenômenos Eletromagnéticos Experimental (2),ID,18,18,Kelly,BCT,SL,qui,10:00
-106,TERMO 5,5137,Fenômenos Eletromagnéticos Experimental (2),IA,18,14,Rossano,BCT,SL,seg,15:30
-107,TERMO 5,5137,Fenômenos Eletromagnéticos Experimental (2),IB,18,4,Rossano,BCT,SL,qui,13:30
-108,TERMO 5,5137,Fenômenos Eletromagnéticos Experimental (2),,18,17,Rossano,BCT,SL,seg,21:00
-109,TERMO 5,5137,Fenômenos Eletromagnéticos Experimental (2),NB,18,16,Rossano,BCT,SL,qui,19:00
-110,TERMO 5,3490,Inteligência Artificial (4),I,50,56,Berton,BCC,SL,ter,13:30
-110,TERMO 5,3490,Inteligência Artificial (4),I,50,56,Berton,BCC,LAB,qui,15:30
-111,TERMO 5,3490,Inteligência Artificial (4),N,50,56,Didier,BCC,SL,ter,19:00
-111,TERMO 5,3490,Inteligência Artificial (4),N,50,56,Didier,BCC,LAB,qui,21:00
-112,TERMO 5,2612,Sistemas Operacionais (4),I,50,58,Joahannes,BCC,SL,qua,13:30
-112,TERMO 5,2612,Sistemas Operacionais (4),I,50,58,Joahannes,BCC,LAB,sex,15:30
-113,TERMO 5,2612,Sistemas Operacionais (4),N,50,58,Joahannes,BCC,SL,qua,19:00
-113,TERMO 5,2612,Sistemas Operacionais (4),N,50,58,Joahannes,BCC,LAB,sex,21:00
-114,TERMO 5,2975,Teoria de Grafos (4),I,65,8,Luis,BCC,SL,seg,15:30
-114,TERMO 5,2975,Teoria de Grafos (4),I,65,8,Luis,BCC,LAB,qui,13:30
-115,TERMO 5,2975,Teoria de Grafos (4),N,65,30,Sanderson,BCC,SL,seg,21:00
-115,TERMO 5,2975,Teoria de Grafos (4),N,65,30,Sanderson,BCC,SL,qui,19:00
-116,TERMO 5,5168,Projeto Orientado a Objetos (4),I,50,51,Fabio,BCC,LAB,ter,15:30
-116,TERMO 5,5168,Projeto Orientado a Objetos (4),I,50,51,Fabio,BCC,LAB,sex,13:30
-117,TERMO 5,5168,Projeto Orientado a Objetos (4),N,50,57,Fabio,BCC,LAB,ter,21:00
-117,TERMO 5,5168,Projeto Orientado a Objetos (4),N,50,57,Fabio,BCC,LAB,sex,19:00
-118,TERMO 5,2616,Linguagens Formais e Autômatos (4),I,65,60,Chaves,BCC,SL,seg,13:30
-118,TERMO 5,2616,Linguagens Formais e Autômatos (4),I,65,60,Chaves,BCC,SL,qua,15:30
-119,TERMO 5,2616,Linguagens Formais e Autômatos (4),N,65,42,Luis,BCC,SL,seg,19:00
-119,TERMO 5,2616,Linguagens Formais e Autômatos (4),N,65,42,Luis,BCC,SL,qua,21:00
-120,TERMO 5,4714,Introdução à Ecologia (4),I,65,49,Amado,BBT,SL,seg,15:30
-120,TERMO 5,4714,Introdução à Ecologia (4),I,65,49,Amado,BBT,SL,qui,13:30
-121,TERMO 5,4714,Introdução à Ecologia (4),N,65,55,Amado,BBT,SL,seg,21:00
-121,TERMO 5,4714,Introdução à Ecologia (4),N,65,55,Amado,BBT,SL,qui,19:00
-122,TERMO 5,5384,Bioética e Biossegurança (2),I,65,60,Luciane,BBT,SL,sex,15:30
-123,TERMO 5,5384,Bioética e Biossegurança (2),N,65,48,Luciane,BBT,SL,sex,19:00
-124,TERMO 5,5760,Bioquimica Analítica (4),I,65,20,Conceição,BBT,SL,ter,13:30
-124,TERMO 5,5760,Bioquimica Analítica (4),I,65,20,Conceição,BBT,SL,qui,15:30
-125,TERMO 5,5760,Bioquimica Analítica (4),N,65,20,Conceição,BBT,SL,ter,19:00
-125,TERMO 5,5760,Bioquimica Analítica (4),N,65,20,Conceição,BBT,SL,qui,21:00
-126,TERMO 5,5762,Engenharia Bioquímica I (4),I,65,16,Elisabeth,BBT,SL,qua,13:30
-126,TERMO 5,5762,Engenharia Bioquímica I (4),I,65,16,Elisabeth,BBT,SL,sex,13:30
-127,TERMO 5,5372,Introdução à Bioinformática (4),I,50,12,André,BBT,SL,seg,13:30
-127,TERMO 5,5372,Introdução à Bioinformática (4),I,50,12,André,BBT,SL,qua,15:30
-128,TERMO 5,5372,Introdução à Bioinformática (4),N,50,11,Michael,BBT,SL,seg,19:00
-128,TERMO 5,5372,Introdução à Bioinformática (4),N,50,11,Michael,BBT,SL,qua,19:00
-129,TERMO 5,5773,Análise Real I (4),I,65,14,Vanessa,BMC,SL,seg,13:30
-129,TERMO 5,5773,Análise Real I (4),I,65,14,Vanessa,BMC,SL,qua,15:30
-130,TERMO 5,5773,Análise Real I (4),N,65,26,Grasiele,BMC,SL,seg,19:00
-130,TERMO 5,5773,Análise Real I (4),N,65,26,Grasiele,BMC,SL,qua,21:00
-131,TERMO 5,6062,Elementos de Álgebra (4),I,65,13,Patrícia,BMC,SL,seg,15:30
-131,TERMO 5,6062,Elementos de Álgebra (4),I,65,13,Patrícia,BMC,SL,qui,13:30
-132,TERMO 5,6062,Elementos de Álgebra (4),N,65,20,Grasiele,BMC,SL,seg,21:00
-132,TERMO 5,6062,Elementos de Álgebra (4),N,65,20,Grasiele,BMC,SL,qui,19:00
-133,TERMO 5,4148,Otimização Linear (4),I,50,12,Felipe,BMC,SL,ter,13:30
-133,TERMO 5,4148,Otimização Linear (4),I,50,12,Felipe,BMC,SL,qui,15:30
-134,TERMO 5,4148,Otimização Linear (4),N,50,16,Horácio,BMC,SL,qua,19:00
-134,TERMO 5,4148,Otimização Linear (4),N,50,16,Horácio,BMC,SL,sex,21:00
-135,TERMO 5,4146,Álgebra Linear Computacional (4),I,50,12,Leduino,BMC,SL,ter,15:30
-135,TERMO 5,4146,Álgebra Linear Computacional (4),I,50,12,Leduino,BMC,LAB,sex,13:30
-136,TERMO 5,4146,Álgebra Linear Computacional (4),N,50,18,Leduino,BMC,SL,ter,21:00
-136,TERMO 5,4146,Álgebra Linear Computacional (4),N,50,18,Leduino,BMC,LAB,sex,19:00
-137,TERMO 5,5132,Análise de Sinais (4),I,65,53,Adenauer,EB,SL,ter,15:30
-137,TERMO 5,5132,Análise de Sinais (4),I,65,53,Adenauer,EB,SL,sex,13:30
-138,TERMO 5,5132,Análise de Sinais (4),N,65,51,Paiva,EB,SL,ter,21:00
-138,TERMO 5,5132,Análise de Sinais (4),N,65,51,Paiva,EB,SL,sex,19:00
-139,TERMO 5,5903,Circuitos Elétricos II (4),I,65,54,Henrique,EB,SL,ter,13:30
-139,TERMO 5,5903,Circuitos Elétricos II (4),I,65,54,Henrique,EB,SL,qui,15:30
-140,TERMO 5,5903,Circuitos Elétricos II (4),N,65,38,Henrique,EB,SL,ter,19:00
-140,TERMO 5,5903,Circuitos Elétricos II (4),N,65,38,Henrique,EB,SL,qui,21:00
-141,TERMO 5,9802,Introdução aos Materiais Elétricos (2),I,65,29,Antonelli,EC,SL,qui,13:30
-142,TERMO 5,9802,Introdução aos Materiais Elétricos (2),N,65,35,Antonelli,EC,SL,qui,19:00
-143,TERMO 5,6090,Laboratório de Sistemas Computacionais: Arquitetura,I,25,25,Sergio,EC,LAB,qua,13:30
-143,TERMO 5,6090,Laboratório de Sistemas Computacionais: Arquitetura,I,25,25,Sergio,EC,LAB,sex,15:30
-144,TERMO 5,6090,Laboratório de Sistemas Computacionais: Arquitetura,N,25,25,Tiago,EC,LAB,qua,19:00
-144,TERMO 5,6090,Laboratório de Sistemas Computacionais: Arquitetura,N,25,25,Tiago,EC,LAB,sex,21:00
-145,TERMO 7,5855,Imunologia Geral (4),I,75,7,Loures,BBT,SL,seg,13:30
-145,TERMO 7,5855,Imunologia Geral (4),I,75,7,Loures,BBT,SL,seg,15:30
-146,TERMO 7,5867,Biotecnologia Vegetal (4),I,75,5,Michael,BBT,SL,seg,8:00
-146,TERMO 7,5867,Biotecnologia Vegetal (4),I,75,5,Michael,BBT,SL,seg,10:00
-147,TERMO 7,5865,Biotecnologia Ambiental II (4),I,75,18,Danielle,BBT,SL,sex,8:00
-147,TERMO 7,5865,Biotecnologia Ambiental II (4),I,75,18,Danielle,BBT,SL,sex,10:00
-148,TERMO 7,6088,Biotecnologia de Energias Renováveis I (4),I,75,9,Danielle,BBT,SL,sex,13:30
-148,TERMO 7,6088,Biotecnologia de Energias Renováveis I (4),I,75,9,Danielle,BBT,SL,sex,15:30
-149,TERMO 7,5866,Modelos Animais (4),I,75,5,Loures,BBT,SL,ter,13:30
-149,TERMO 7,5866,Modelos Animais (4),I,75,5,Loures,BBT,SL,ter,15:30
-150,TERMO 7,5785,Reologia dos Materiais (2),I,75,2,Lilia,EM,SL,ter,8:00
-151,TERMO 7,5787,Técnicas Experimentais (4),I,75,8,Capella,EM,SL,ter,13:30
-151,TERMO 7,5787,Técnicas Experimentais (4),I,75,8,Capella,EM,SL,ter,15:30
-152,TERMO 7,6671,Metalurgia Física (4),I,75,10,Katia,EM,SL,sex,13:30
-152,TERMO 7,6671,Metalurgia Física (4),I,75,10,Katia,EM,SL,sex,15:30
-153,TERMO 7,5786,Síntese de Polímeros (4),I,75,9,Mauricio,EM,SL,qui,13:30
-153,TERMO 7,5786,Síntese de Polímeros (4),I,75,9,Mauricio,EM,SL,qui,15:30
-154,TERMO 7,5784,Matérias Primas-Cerâmicas (4),I,75,7,Quinteiro,EM,SL,seg,15:30
-154,TERMO 7,5784,Matérias Primas-Cerâmicas (4),I,75,7,Quinteiro,EM,SL,qua,15:30
-155,TERMO 7,9794,Fundamentos de Administração (2),I,75,20,Iraci,EM,SL,qua,13:30
-156,TERMO 7,9794,Fundamentos de Administração (2),N,75,46,Iraci,EM,SL,ter,19:00
-157,TERMO 9,5877,Processamento de Materiais Metálicos (4),I,75,10,Dilermando,EM,SL,qui,15:30
-157,TERMO 9,5877,Processamento de Materiais Metálicos (4),I,75,10,Dilermando,EM,SL,qui,19:00
-158,TERMO 9,5878,Metalurgia Extrativa (2),I,75,5,Gisele,EM,SL,sex,15:30
-159,TERMO 9,5879,Processamento de Termoplásticos (4),I,75,5,Passador,EM,SL,seg,15:30
-159,TERMO 9,5879,Processamento de Termoplásticos (4),I,75,5,Passador,EM,SL,seg,19:00
-160,TERMO 9,6682,Engenharia de Produtos Cerâmicos (4),I,75,16,Albers,EM,SL,ter,15:30
-160,TERMO 9,6682,Engenharia de Produtos Cerâmicos (4),I,75,16,Albers,EM,SL,ter,19:00
-161,TERMO 9,5881,Corrosão (4),I,75,75,Maraísa,EM,SL,qua,15:30
-161,TERMO 9,5881,Corrosão (4),I,75,75,Maraísa,EM,SL,qua,19:00
-162,TERMO 7,6098,Lab. de Sist. Comp.: Compiladores (4),I,25,13,Galvão,EC,LAB,seg,13:30
-162,TERMO 7,6098,Lab. de Sist. Comp.: Compiladores (4),I,25,13,Galvão,EC,LAB,qui,15:30
-163,TERMO 7,6098,Lab. de Sist. Comp.: Compiladores (4),N,25,18,Galvão,EC,LAB,seg,19:00
-163,TERMO 7,6098,Lab. de Sist. Comp.: Compiladores (4),N,25,18,Galvão,EC,LAB,qui,21:00
-164,TERMO 7,9806,Lab. de Controle Aplicado (2),I,25,18,Sergio,EC,LAB,qua,15:30
-165,TERMO 7,9806,Lab. de Controle Aplicado (2),N,25,7,Sergio,EC,LAB,qua,19:00
-166,TERMO 7,9882,Projetos em Engenharia de Computação (4),I,25,3,Tiago,EC,LAB,qua,13:30
-166,TERMO 7,9882,Projetos em Engenharia de Computação (4),I,25,3,Tiago,EC,LAB,sex,15:30
-167,TERMO 7,9882,Projetos em Engenharia de Computação (4),N,25,24,Denise,EC,LAB,qua,21:00
-167,TERMO 7,9882,Projetos em Engenharia de Computação (4),N,25,24,Denise,EC,LAB,sex,19:00
-168,TERMO 7,6033,Sistemas Embarcados (4),I,25,23,Fernanda,EC,LAB,ter,15:30
-168,TERMO 7,6033,Sistemas Embarcados (4),I,25,23,Fernanda,EC,LAB,sex,13:30
-169,TERMO 7,6033,Sistemas Embarcados (4),N,25,23,Marcorin,EC,LAB,seg,21:00
-169,TERMO 7,6033,Sistemas Embarcados (4),N,25,23,Marcorin,EC,LAB,qua,19:00
-170,TERMO 9,8271,Lab. de Sist. Comp.: Comunicação Digital (4),I,25,19,Marcorin,EC,LAB,seg,15:30
-170,TERMO 9,8271,Lab. de Sist. Comp.: Comunicação Digital (4),I,25,19,Marcorin,EC,LAB,qua,15:30
-171,TERMO 7,4545,Eq. Diferenciais Parciais,I,50,8,Gama,BMC,SL,ter,13:30
-171,TERMO 7,4545,Eq. Diferenciais Parciais,I,50,8,Gama,BMC,SL,sex,13:30
-172,TERMO 7,4405,Espaços Métricos,I,50,8,Patricia,BMC,SL,seg,13:30
-172,TERMO 7,4405,Espaços Métricos,I,50,8,Patricia,BMC,SL,qua,15:30
-173,TERMO 7,4402,Otimização Não-Linear,I,50,6,Felipe,BMC,SL,seg,15:30
-173,TERMO 7,4402,Otimização Não-Linear,I,50,6,Felipe,BMC,SL,ter,15:30
-174,TERMO 7,9826,Resolução de Problemas Via Modelagem Matemática,I,50,50,Horácio,BMC,LABINFO,qua,13:30
-174,TERMO 7,9826,Resolução de Problemas Via Modelagem Matemática,I,50,50,Horácio,BMC,SL,sex,15:30
-175,TERMO 7,5776,Biomecânica,I,75,34,Kunkel,EB,SL,seg,8:00
-175,TERMO 7,5776,Biomecânica,I,75,34,Kunkel,EB,SL,seg,10:00
-176,TERMO 9,6111,Bioengenharia,I,75,20,Gurjao,EB,SL,qui,8:00
-176,TERMO 9,6111,Bioengenharia,I,75,20,Gurjao,EB,SL,qui,10:00
-177,TERMO 9,6111,Bioengenharia,N,75,28,Aoki,EB,SL,qua,19:00
-177,TERMO 9,6111,Bioengenharia,N,75,28,Aoki,EB,SL,qua,21:00
-178,TERMO 7,5170,Biomateriais,N,75,24,Edson,EB,SL,ter,21:00
-179,TERMO 7,5170,Biomateriais,I,75,21,Edson,EB,SL,sex,10:00
-180,TERMO 7,4165,Imagens Biomédicas,I,75,41,Matheus,EB,LABINFO,sex,13:30
-180,TERMO 7,4165,Imagens Biomédicas,I,75,41,Matheus,EB,LABINFO,sex,15:30
-181,TERMO 7,5763,Transdução de Grandezas Biomédicas,I,75,22,Saraiva,EB,SL,seg,13:30
-181,TERMO 7,5763,Transdução de Grandezas Biomédicas,I,75,22,Saraiva,EB,SL,qua,13:30
-182,TERMO 7,5763,Transdução de Grandezas Biomédicas,N,75,10,Fabiano,EB,SL,seg,19:00
-182,TERMO 7,5763,Transdução de Grandezas Biomédicas,N,75,10,Fabiano,EB,SL,qui,21:00
-183,TERMO 7,8217,Instrumentos Eletromédicos,I,75,32,Karina,EB,SL,seg,15:30
-183,TERMO 7,8217,Instrumentos Eletromédicos,I,75,32,Karina,EB,SL,qua,15:30
-184,TERMO 7,6089,Laboratório de Circuitos Elétricos,I,25,22,Aoki,EB,LAB,ter,13:30
-185,TERMO 7,6089,Laboratório de Circuitos Elétricos,N,25,18,Aoki,EB,LAB,ter,19:00
-186,TERMO 7,4164,Metaheurística,I,30,4,Chaves,BCC,SL,seg,15:30
-186,TERMO 7,4164,Metaheurística,I,30,4,Chaves,BCC,SL,qua,13:30
-187,TERMO 7,9880,Interação Humano-Computador e Experiência do Usuário,I,50,33,Silva,BCC,LABINFO,qua,13:30
-187,TERMO 7,9880,Interação Humano-Computador e Experiência do Usuário,I,50,33,Silva,BCC,SL,sex,15:30
-188,TERMO 1,7684,Laboratório de Matemática (2),IA,55,53,Renato,BMC,SL,ter,10:00
-189,TERMO 1,7684,Laboratório de Matemática (2),IB,55,53,Erwin,BMC,SL,ter,10:00
-190,TERMO 1,7684,Laboratório de Matemática (2),IC,55,49,ClaudiaAline,BMC,SL,ter,10:00
-191,TERMO 1,7684,Laboratório de Matemática (2),ID,55,48,Thadeu,BMC,SL,ter,10:00
-192,TERMO 1,7684,Laboratório de Matemática (2),,55,41,Alfredo,BMC,SL,ter,18:00
-192,TERMO 1,7684,Laboratório de Matemática (2),,55,41,Alfredo,BMC,SL,qui,18:00
-193,TERMO 1,7684,Laboratório de Matemática (2),NB,55,36,Karen,BMC,SL,ter,18:00
-193,TERMO 1,7684,Laboratório de Matemática (2),NB,55,36,Karen,BMC,SL,qui,18:00
-194,TERMO 3,5169,Introdução à Nanotecnologia (2),I,25,24,Elias,BCT,SL,sex,8:00
-195,TERMO 3,5169,Introdução à Nanotecnologia (2),N,25,24,Elias,BCT,SL,qua,21:00
-196,TERMO 3,6076,Cultura dos Jogos Digitais (2),N,75,71,Pereira,BCT,SL,seg,19:00
-197,TERMO 3,6076,Cultura dos Jogos Digitais (2),I,75,72,Pereira,BCT,SL,qua,10:00
-198,TERMO 3,5408,Econometria (4),I,75,26,Scriptore,BCT,SL,qua,13:30
-198,TERMO 3,5408,Econometria (4),I,75,26,Scriptore,BCT,SL,sex,15:30
-199,TERMO 3,5408,Econometria (4),N,75,43,Scriptore,BCT,SL,qua,19:00
-199,TERMO 3,5408,Econometria (4),N,75,43,Scriptore,BCT,SL,sex,21:00
-200,TERMO 3,4775,Macroeconomia (2),I,75,63,Sato,BCT,LABINFO,qui,10:00
-201,TERMO 3,4775,Macroeconomia (2),N,75,38,Sato,BCT,LABINFO,seg,19:00
-202,TERMO 3,6079,Tópicos em Ciência e Tecnologia II (2),I,75,38,Walter,BCT,SL,qui,8:00
-203,TERMO 3,6079,Tópicos em Ciência e Tecnologia II (2),N,75,62,Walter,BCT,SL,seg,21:00
-204,TERMO 3,6084,"Direitos Humanos, Multiculturalismo e Ciência e Tecnologia",IA,75,53,Evandro,BCT,SL,ter,10:00
-205,TERMO 3,6084,"Direitos Humanos, Multiculturalismo e Ciência e Tecnologia",IB,25,21,Luciana,BCT,SL,ter,10:00
-206,TERMO 3,6084,"Direitos Humanos, Multiculturalismo e Ciência e Tecnologia",N,75,63,Evandro,BCT,SL,ter,21:00
-207,TERMO 5,7671,Empreendedorismo (2),I,75,49,Iraci,BCT,SL,ter,15:30
-208,TERMO 5,7671,Empreendedorismo (2),N,75,36,Iraci,BCT,SL,ter,21:00
-209,TERMO 9,10427,Princípios e Técnicas de Encefalografia em Neurociências,I,40,40,Adenauer,EB,SL,ter,13:30
-209,TERMO 9,10427,Princípios e Técnicas de Encefalografia em Neurociências,I,40,40,Adenauer,EB,LAB,sex,15:30
-210,TERMO 5,9793,Introdução à Economia,I,75,72,Roberson,?,SL,qua,15:30
-211,TERMO 9,5888,Metalurgia do Pó (2),I,75,2,Gisele,EM,SL,sex,13:30
-212,TERMO 7,5871,Estrutura e Propriedades de Polímeros (4) - Alteração de PPC,I,75,75,Lilia,EM,SL,seg,8:00
-212,TERMO 7,5871,Estrutura e Propriedades de Polímeros (4) - Alteração de PPC,I,75,75,Lilia,EM,SL,seg,10:00
-213,TERMO 5,6927,Materiais de construção civil (reof 6T),N,75,5,Quinteiro,EM,SL,seg,19:00
-213,TERMO 5,6927,Materiais de construção civil (reof 6T),N,75,5,Quinteiro,EM,SL,seg,21:00
-214,TERMO 7,4782,Aspectos de Implementação de Banco de Dados (4),N,50,46,Musa,BCC,LAB,seg,19:00
-214,TERMO 7,4782,Aspectos de Implementação de Banco de Dados (4),N,50,46,Musa,BCC,LAB,qua,21:00
-215,TERMO 7,7218,Tópicos em Tecnologia da Computação IV (Comunicação Digital),I,50,25,Kimura,BCC,LAB,ter,13:30
-215,TERMO 7,7218,Tópicos em Tecnologia da Computação IV (Comunicação Digital),I,50,25,Kimura,BCC,SL,qui,15:30
-216,TERMO 5,3050,Validação e Verificação de Software (4),I,50,32,Otavio,BCC,LAB,ter,15:30
-216,TERMO 5,3050,Validação e Verificação de Software (4),I,50,32,Otavio,BCC,SL,sex,13:30
-217,TERMO 7,6168,Tópicos em Tecnologia da Computação I (4),N,50,12,Arlindo,BCC,SL,ter,21:00
-217,TERMO 7,6168,Tópicos em Tecnologia da Computação I (4),N,50,12,Arlindo,BCC,LAB,sex,19:00
-218,TERMO 7,7217,Tópicos em Tecnologia da Computação III (Bioinformática),N,50,25,Reginaldo,BCC,SL,ter,19:00
-218,TERMO 7,7217,Tópicos em Tecnologia da Computação III (Bioinformática),N,50,25,Reginaldo,BCC,LAB,qui,21:00
-219,TERMO 3,2832,Algoritmos e Estruturas de Dados I (4),I,50,54,Regina,BCC,SL,ter,13:30
-219,TERMO 3,2832,Algoritmos e Estruturas de Dados I (4),I,50,54,Regina,BCC,SL,qui,15:30
-220,TERMO 3,2832,Algoritmos e Estruturas de Dados I (4),N,50,43,Regina,BCC,SL,ter,19:00
-220,TERMO 3,2832,Algoritmos e Estruturas de Dados I (4),N,50,43,Regina,BCC,SL,qui,21:00
-221,TERMO 5,2831,Banco de Dados (4),I,50,59,Musa,BCC,LAB,seg,15:30
-221,TERMO 5,2831,Banco de Dados (4),I,50,59,Musa,BCC,LAB,qui,13:30
-222,TERMO 5,2471,Programação Orientada a Objetos (4),N,50,57,Otavio,BCC,LAB,ter,21:00
-222,TERMO 5,2471,Programação Orientada a Objetos (4),N,50,57,Otavio,BCC,SL,sex,19:00
-223,TERMO 5,2471,Programação Orientada a Objetos (4),I,50,51,Rodrigo,BCC,LAB,qua,8:00
-223,TERMO 5,2471,Programação Orientada a Objetos (4),I,50,51,Rodrigo,BCC,SL,sex,10:00
-224,TERMO 5,3579,Projeto e Análise de Algoritmos (4),I,50,45,Sanderson,BCC,SL,seg,15:30
-224,TERMO 5,3579,Projeto e Análise de Algoritmos (4),I,50,45,Sanderson,BCC,SL,qui,13:30
-225,TERMO 3,2650,Geometria Análitica,N,55,54,Mattos,BMC,SL,ter,19:00
-225,TERMO 3,2650,Geometria Análitica,N,55,54,Mattos,BMC,SL,qui,21:00
-227,TERMO 5,5398,Sistemas Mecânicos (4),N,75,7,Kunkel,EB,SL,sex,19:00
-227,TERMO 5,5398,Sistemas Mecânicos (4),N,75,7,Kunkel,EB,SL,sex,21:00
-228,TERMO 5,9792,Métodos Matemáticos para Engenharia (4),N,75,30,Paiva,EB,SL,ter,19:00
-228,TERMO 5,9792,Métodos Matemáticos para Engenharia (4),N,75,30,Paiva,EB,SL,sex,21:00
-229,TERMO 5,6674,Reciclagem de Materiais (2) (reof 5T),I,75,75,Lilia,EM,SL,ter,10:00
-230,TERMO 3,9819,INICIAÇÃO AOS PEPICT I,I,50,46,Luciane,BCT,SL,seg,8:00
-231,TERMO 3,9819,INICIAÇÃO AOS PEPICT I,N,50,44,Luciane,BCT,SL,qui,21:00
-232,TERMO 3,8240,PRÁTICA EM PROJETOS EXTENSIONISTAS I,I,25,40,Marli,BCT,SL,qua,8:00
-232,TERMO 3,8240,PRÁTICA EM PROJETOS EXTENSIONISTAS I,I,25,40,Marli,BCT,SL,sex,10:00
-233,TERMO 3,8240,PRÁTICA EM PROJETOS EXTENSIONISTAS I,N,25,30,Marli,BCT,SL,ter,21:00
-233,TERMO 3,8240,PRÁTICA EM PROJETOS EXTENSIONISTAS I,N,25,30,Marli,BCT,SL,sex,19:00
-234,TERMO 9,9804,TCC I - EC,I,50,12,Silva,EC,SL,qui,15:30
+ID_TURMA,TERMO,CÓD. UC,UNIDADE CURRICULAR,TURMA,Vagas,Inscritos,DOCENTE,DEPARTAMENTO,TIPO_SALA,Dia,Hora,Acessibilidade
+1,TERMO 1,2672,"Ciência, Tecnologia e Sociedade (2)",IA,65,52,Pereira,BCT,SL,seg,15:30,0
+2,TERMO 1,2672,"Ciência, Tecnologia e Sociedade (2)",IB,65,55,Pereira,BCT,SL,seg,13:30,0
+3,TERMO 1,2672,"Ciência, Tecnologia e Sociedade (2)",IC,65,50,Walter,BCT,SL,seg,15:30,0
+4,TERMO 1,2672,"Ciência, Tecnologia e Sociedade (2)",ID,65,52,Evandro,BCT,SL,seg,13:30,0
+5,TERMO 1,2672,"Ciência, Tecnologia e Sociedade (2)",IE,25,18,Luciana,BCT,SL,seg,13:30,0
+6,TERMO 1,2672,"Ciência, Tecnologia e Sociedade (2)",IF,25,14,Luciana,BCT,SL,seg,15:30,0
+7,TERMO 1,2672,"Ciência, Tecnologia e Sociedade (2)",,65,57,Walter,BCT,SL,seg,19:00,0
+8,TERMO 1,2672,"Ciência, Tecnologia e Sociedade (2)",NB,65,49,Evandro,BCT,SL,seg,19:00,0
+9,TERMO 1,2672,"Ciência, Tecnologia e Sociedade (2)",NC,25,20,Luciana,BCT,SL,seg,19:00,0
+10,TERMO 1,5704,Química Geral (4),IA,50,50,Dayane,BCT,SL,qua,13:30,0
+10,TERMO 1,5704,Química Geral (4),IA,50,50,Dayane,BCT,SL,sex,15:30,0
+11,TERMO 1,5704,Química Geral (4),IB,50,51,Dayane,BCT,SL,qua,15:30,0
+11,TERMO 1,5704,Química Geral (4),IB,50,51,Dayane,BCT,SL,sex,13:30,0
+12,TERMO 1,5704,Química Geral (4),IC,50,47,Silvia,BCT,SL,qua,13:30,0
+12,TERMO 1,5704,Química Geral (4),IC,50,47,Silvia,BCT,SL,sex,15:30,0
+13,TERMO 1,5704,Química Geral (4),ID,50,49,Elias,BCT,SL,qua,15:30,0
+13,TERMO 1,5704,Química Geral (4),ID,50,49,Elias,BCT,SL,sex,13:30,0
+14,TERMO 1,5704,Química Geral (4),IE,65,36,Silvia,BCT,SL,qua,8:00,0
+14,TERMO 1,5704,Química Geral (4),IE,65,36,Silvia,BCT,SL,sex,10:00,0
+15,TERMO 1,5704,Química Geral (4),,50,51,Hugo,BCT,SL,qua,21:00,0
+15,TERMO 1,5704,Química Geral (4),,50,51,Hugo,BCT,SL,sex,21:00,0
+16,TERMO 1,5704,Química Geral (4),NB,50,48,Maraísa,BCT,SL,qua,21:00,0
+16,TERMO 1,5704,Química Geral (4),NB,50,48,Maraísa,BCT,SL,sex,19:00,0
+17,TERMO 1,5704,Química Geral (4),NC,65,36,Hugo,BCT,SL,qua,19:00,0
+17,TERMO 1,5704,Química Geral (4),NC,65,36,Hugo,BCT,SL,sex,19:00,0
+18,TERMO 1,9394,Lógica de Programação (4),IA,50,50,Ana,BCC,LABINFO,ter,13:30,0
+18,TERMO 1,9394,Lógica de Programação (4),IA,50,50,Ana,BCC,LABINFO,qui,15:30,0
+19,TERMO 1,9394,Lógica de Programação (4),IB,50,51,Arlindo,BCC,LABINFO,ter,15:30,0
+19,TERMO 1,9394,Lógica de Programação (4),IB,50,51,Arlindo,BCC,LABINFO,qui,13:30,0
+20,TERMO 1,9394,Lógica de Programação (4),IC,50,47,Quiles,BCC,LABINFO,ter,13:30,0
+20,TERMO 1,9394,Lógica de Programação (4),IC,50,47,Quiles,BCC,LABINFO,qui,15:30,0
+21,TERMO 1,9394,Lógica de Programação (4),ID,50,49,Marcio,BCC,LABINFO,ter,15:30,0
+21,TERMO 1,9394,Lógica de Programação (4),ID,50,49,Marcio,BCC,LABINFO,qui,13:30,0
+22,TERMO 1,9394,Lógica de Programação (4),IE,50,16,Quiles,BCC,LABINFO,ter,8:00,0
+22,TERMO 1,9394,Lógica de Programação (4),IE,50,16,Quiles,BCC,LABINFO,qui,10:00,0
+23,TERMO 1,9394,Lógica de Programação (4),,50,49,Ana,BCC,LABINFO,ter,19:00,0
+23,TERMO 1,9394,Lógica de Programação (4),,50,49,Ana,BCC,LABINFO,qui,21:00,0
+24,TERMO 1,9394,Lógica de Programação (4),NB,50,48,Marcio,BCC,LABINFO,ter,21:00,0
+24,TERMO 1,9394,Lógica de Programação (4),NB,50,48,Marcio,BCC,LABINFO,qui,19:00,0
+25,TERMO 1,9394,Lógica de Programação (4),NC,50,14,Kimura,BCC,LABINFO,ter,19:00,0
+25,TERMO 1,9394,Lógica de Programação (4),NC,50,14,Kimura,BCC,LABINFO,qui,21:00,0
+26,TERMO 1,5703,Fundamentos de Biologia Moderna (4),IAC,110,106,Fernando,BCT,SL,seg,13:30,0
+26,TERMO 1,5703,Fundamentos de Biologia Moderna (4),IAC,110,106,Fernando,BCT,SL,qua,15:30,0
+27,TERMO 1,5703,Fundamentos de Biologia Moderna (4),IBD,110,106,André,BCT,SL,seg,15:30,0
+27,TERMO 1,5703,Fundamentos de Biologia Moderna (4),IBD,110,106,André,BCT,SL,qua,13:30,0
+28,TERMO 1,5703,Fundamentos de Biologia Moderna (4),NAB,110,110,Fernando,BCT,SL,seg,21:00,0
+28,TERMO 1,5703,Fundamentos de Biologia Moderna (4),NAB,110,110,Fernando,BCT,SL,qua,19:00,0
+29,TERMO 1,5702,Cálculo em uma variável (6),IA,50,50,Renato,BMC,SL,ter,15:30,0
+29,TERMO 1,5702,Cálculo em uma variável (6),IA,50,50,Renato,BMC,SL,qui,13:30,0
+29,TERMO 1,5702,Cálculo em uma variável (6),IA,50,50,Renato,BMC,SL,sex,13:30,0
+30,TERMO 1,5702,Cálculo em uma variável (6),IB,50,51,Erwin,BMC,SL,ter,13:30,0
+30,TERMO 1,5702,Cálculo em uma variável (6),IB,50,51,Erwin,BMC,SL,qui,15:30,0
+30,TERMO 1,5702,Cálculo em uma variável (6),IB,50,51,Erwin,BMC,SL,sex,15:30,0
+31,TERMO 1,5702,Cálculo em uma variável (6),IC,50,47,Alfredo / Cláudia Aline,BMC,SL,ter,15:30,0
+31,TERMO 1,5702,Cálculo em uma variável (6),IC,50,47,Alfredo / Cláudia Aline,BMC,SL,qui,13:30,0
+31,TERMO 1,5702,Cálculo em uma variável (6),IC,50,47,Alfredo / Cláudia Aline,BMC,SL,sex,13:30,0
+32,TERMO 1,5702,Cálculo em uma variável (6),ID,50,49,Thadeu,BMC,SL,ter,13:30,0
+32,TERMO 1,5702,Cálculo em uma variável (6),ID,50,49,Thadeu,BMC,SL,qui,15:30,0
+32,TERMO 1,5702,Cálculo em uma variável (6),ID,50,49,Thadeu,BMC,SL,sex,15:30,0
+33,TERMO 1,5702,Cálculo em uma variável (6),IE,40,33,Mattos,BMC,SL,ter,15:30,0
+33,TERMO 1,5702,Cálculo em uma variável (6),IE,40,33,Mattos,BMC,SL,qui,13:30,0
+33,TERMO 1,5702,Cálculo em uma variável (6),IE,40,33,Mattos,BMC,SL,sex,13:30,0
+34,TERMO 1,5702,Cálculo em uma variável (6),,60,58,Alfredo,BMC,SL,ter,21:00,0
+34,TERMO 1,5702,Cálculo em uma variável (6),,60,58,Alfredo,BMC,SL,qui,19:00,0
+34,TERMO 1,5702,Cálculo em uma variável (6),,60,58,Alfredo,BMC,SL,sex,19:00,0
+35,TERMO 1,5702,Cálculo em uma variável (6),NB,60,56,Karen,BMC,SL,ter,19:00,0
+35,TERMO 1,5702,Cálculo em uma variável (6),NB,60,56,Karen,BMC,SL,qui,21:00,0
+35,TERMO 1,5702,Cálculo em uma variável (6),NB,60,56,Karen,BMC,SL,sex,21:00,0
+37,TERMO 3,2475,Álgebra Linear (4),IA,65,31,Angelo,BMC,SL,ter,15:30,0
+37,TERMO 3,2475,Álgebra Linear (4),IA,65,31,Angelo,BMC,SL,sex,13:30,0
+38,TERMO 3,2475,Álgebra Linear (4),IB,65,36,Macedo,BMC,SL,qua,13:30,0
+38,TERMO 3,2475,Álgebra Linear (4),IB,65,36,Macedo,BMC,SL,sex,15:30,0
+39,TERMO 3,2475,Álgebra Linear (4),IC,65,64,Vanessa,BMC,SL,ter,10:00,0
+39,TERMO 3,2475,Álgebra Linear (4),IC,65,64,Vanessa,BMC,SL,sex,8:00,0
+40,TERMO 3,2475,Álgebra Linear (4),,65,30,AnaMoreira,BMC,SL,ter,21:00,0
+40,TERMO 3,2475,Álgebra Linear (4),,65,30,AnaMoreira,BMC,SL,sex,19:00,0
+41,TERMO 3,2475,Álgebra Linear (4),NB,65,22,AnaMoreira,BMC,SL,qua,19:00,0
+41,TERMO 3,2475,Álgebra Linear (4),NB,65,22,AnaMoreira,BMC,SL,sex,21:00,0
+42,TERMO 3,5359,Cálculo em várias variáveis (4),IA,65,14,Robson,BMC,SL,seg,13:30,0
+42,TERMO 3,5359,Cálculo em várias variáveis (4),IA,65,14,Robson,BMC,SL,qua,15:30,0
+43,TERMO 3,5359,Cálculo em várias variáveis (4),IB,65,13,Robson,BMC,SL,seg,15:30,0
+43,TERMO 3,5359,Cálculo em várias variáveis (4),IB,65,13,Robson,BMC,SL,qui,13:30,0
+44,TERMO 3,5359,Cálculo em várias variáveis (4),IC,65,21,Leandro,BMC,SL,seg,8:00,0
+44,TERMO 3,5359,Cálculo em várias variáveis (4),IC,65,21,Leandro,BMC,SL,qua,10:00,0
+45,TERMO 3,5359,Cálculo em várias variáveis (4),ID,65,63,Pedro,BMC,SL,seg,10:00,0
+45,TERMO 3,5359,Cálculo em várias variáveis (4),ID,65,63,Pedro,BMC,SL,qui,8:00,0
+46,TERMO 3,5359,Cálculo em várias variáveis (4),,65,64,DanielaOliveira,BMC,SL,seg,19:00,0
+46,TERMO 3,5359,Cálculo em várias variáveis (4),,65,64,DanielaOliveira,BMC,SL,qua,21:00,0
+47,TERMO 3,5359,Cálculo em várias variáveis (4),NB,65,61,DanielaOliveira,BMC,SL,seg,21:00,0
+47,TERMO 3,5359,Cálculo em várias variáveis (4),NB,65,61,DanielaOliveira,BMC,SL,qui,19:00,0
+48,TERMO 3,2609,Probabilidade e Estatística (4),IA,65,65,Luzia,BMC,LABINFO,seg,15:30,0
+48,TERMO 3,2609,Probabilidade e Estatística (4),IA,65,65,Luzia,BMC,SL,qui,13:30,0
+49,TERMO 3,2609,Probabilidade e Estatística (4),IB,65,59,Luzia,BMC,LABINFO,seg,13:30,0
+49,TERMO 3,2609,Probabilidade e Estatística (4),IB,65,59,Luzia,BMC,SL,qua,15:30,0
+50,TERMO 3,2609,Probabilidade e Estatística (4),,65,65,Samia,BMC,SL,seg,21:00,0
+50,TERMO 3,2609,Probabilidade e Estatística (4),,65,65,Samia,BMC,LABINFO,qui,19:00,0
+51,TERMO 3,2609,Probabilidade e Estatística (4),NB,65,60,Samia,BMC,SL,seg,19:00,0
+51,TERMO 3,2609,Probabilidade e Estatística (4),NB,65,60,Samia,BMC,LABINFO,qua,21:00,0
+52,TERMO 3,4348,Fenômenos do Contínuo (4),IA,65,66,Manuel,BCT,SL,ter,15:30,0
+52,TERMO 3,4348,Fenômenos do Contínuo (4),IA,65,66,Manuel,BCT,SL,sex,13:30,0
+53,TERMO 3,4348,Fenômenos do Contínuo (4),IB,65,36,Manuel,BCT,SL,qua,13:30,0
+53,TERMO 3,4348,Fenômenos do Contínuo (4),IB,65,36,Manuel,BCT,SL,sex,15:30,0
+54,TERMO 3,4348,Fenômenos do Contínuo (4),,65,38,Thaciana,BCT,SL,ter,21:00,0
+54,TERMO 3,4348,Fenômenos do Contínuo (4),,65,38,Thaciana,BCT,SL,sex,19:00,0
+55,TERMO 3,4348,Fenômenos do Contínuo (4),NB,65,12,Thaciana,BCT,SL,qua,19:00,0
+55,TERMO 3,4348,Fenômenos do Contínuo (4),NB,65,12,Thaciana,BCT,SL,sex,21:00,0
+56,TERMO 3,4538,Fenômenos Mecânicos Experimental (2),IA,15,13,Espirito,BCT,SL,ter,13:30,0
+57,TERMO 3,4538,Fenômenos Mecânicos Experimental (2),IB,15,17,Espirito,BCT,SL,ter,15:30,0
+58,TERMO 3,4538,Fenômenos Mecânicos Experimental (2),IC,15,4,Nirton,BCT,SL,qui,8:00,0
+59,TERMO 3,4538,Fenômenos Mecânicos Experimental (2),ID,15,10,Nirton,BCT,SL,qui,10:00,0
+60,TERMO 3,4538,Fenômenos Mecânicos Experimental (2),,15,14,Antonelli,BCT,SL,ter,19:00,0
+61,TERMO 3,4538,Fenômenos Mecânicos Experimental (2),NB,15,11,Antonelli,BCT,SL,ter,21:00,0
+62,TERMO 3,4772,Química Inorgânica (4),I,25,9,Raquel,BCT,LAB,qua,13:30,0
+62,TERMO 3,4772,Química Inorgânica (4),I,25,9,Raquel,BCT,LAB,sex,15:30,0
+63,TERMO 3,4772,Química Inorgânica (4),N,25,7,Raquel,BCT,SL,qua,19:00,0
+63,TERMO 3,4772,Química Inorgânica (4),N,25,7,Raquel,BCT,LAB,sex,21:00,0
+64,TERMO 3,4350,Química Orgânica (4),I,65,31,Joao,BCT,SL,ter,13:30,0
+64,TERMO 3,4350,Química Orgânica (4),I,65,31,Joao,BCT,SL,qui,15:30,0
+65,TERMO 3,4350,Química Orgânica (4),N,65,22,Joao,BCT,SL,ter,19:00,0
+65,TERMO 3,4350,Química Orgânica (4),N,65,22,Joao,BCT,SL,qui,21:00,0
+66,TERMO 3,2833,Algoritmos e Estruturas de Dados II (4),IA,50,58,Alvaro,BCC,LABINFO,ter,13:30,0
+66,TERMO 3,2833,Algoritmos e Estruturas de Dados II (4),IA,50,58,Alvaro,BCC,LABINFO,qui,15:30,0
+67,TERMO 3,2833,Algoritmos e Estruturas de Dados II (4),IB,50,45,Reginaldo,BCC,LABINFO,ter,13:30,0
+67,TERMO 3,2833,Algoritmos e Estruturas de Dados II (4),IB,50,45,Reginaldo,BCC,SL,qui,15:30,0
+68,TERMO 3,2833,Algoritmos e Estruturas de Dados II (4),N,50,60,Alvaro,BCC,LABINFO,ter,19:00,0
+68,TERMO 3,2833,Algoritmos e Estruturas de Dados II (4),N,50,60,Alvaro,BCC,SL,qui,21:00,0
+69,TERMO 3,5746,Física Geral (4),I,65,26,Espirito,BCT,SL,seg,15:30,0
+69,TERMO 3,5746,Física Geral (4),I,65,26,Espirito,BCT,SL,qui,13:30,0
+70,TERMO 3,5746,Física Geral (4),N,65,22,Fabiano,BCT,SL,seg,21:00,0
+70,TERMO 3,5746,Física Geral (4),N,65,22,Fabiano,BCT,SL,qui,19:00,0
+71,TERMO 3,5739,Biologia do Desenvolvimento (2),I,65,13,Luciane,BBT,SL,seg,10:00,0
+72,TERMO 3,5739,Biologia do Desenvolvimento (2),N,65,14,Luciane,BBT,SL,qui,19:00,0
+73,TERMO 3,5741,Biologia Molecular da Célula (4),I,65,19,Claudia,BBT,SL,ter,15:30,0
+73,TERMO 3,5741,Biologia Molecular da Célula (4),I,65,19,Claudia,BBT,SL,sex,13:30,0
+74,TERMO 3,5741,Biologia Molecular da Célula (4),N,65,18,Claudia,BBT,SL,ter,21:00,0
+74,TERMO 3,5741,Biologia Molecular da Célula (4),N,65,18,Claudia,BBT,SL,sex,19:00,0
+75,TERMO 3,5845,Laboratório de Bioquímica (4),I,25,17,Martin,BBT,SL,ter,8:00,0
+75,TERMO 3,5845,Laboratório de Bioquímica (4),I,25,17,Martin,BBT,LAB,ter,10:00,0
+76,TERMO 3,5845,Laboratório de Bioquímica (4),N,25,17,Martin,BBT,SL,qui,19:00,0
+76,TERMO 3,5845,Laboratório de Bioquímica (4),N,25,17,Martin,BBT,LAB,qui,21:00,0
+77,TERMO 3,5121,Microbiologia Aplicada e Industrial (4),I,50,17,Elisa,BBT,SL,qua,13:30,0
+77,TERMO 3,5121,Microbiologia Aplicada e Industrial (4),I,50,17,Elisa,BBT,SL,sex,15:30,0
+78,TERMO 3,5121,Microbiologia Aplicada e Industrial (4),N,50,14,Elisa,BBT,SL,qua,19:00,0
+78,TERMO 3,5121,Microbiologia Aplicada e Industrial (4),N,50,14,Elisa,BBT,SL,sex,21:00,0
+79,TERMO 3,8215,Fisiologia Humana I (4),IA,40,39,Tatiana,BBT,SL,seg,13:30,0
+79,TERMO 3,8215,Fisiologia Humana I (4),IA,40,39,Tatiana,BBT,SL,qua,15:30,0
+80,TERMO 3,8215,Fisiologia Humana I (4),IB,40,17,Flavio,BBT,SL,seg,13:30,0
+80,TERMO 3,8215,Fisiologia Humana I (4),IB,40,17,Flavio,BBT,SL,qua,15:30,0
+81,TERMO 3,8215,Fisiologia Humana I (4),N,40,39,Flavio,BBT,SL,seg,19:00,0
+81,TERMO 3,8215,Fisiologia Humana I (4),N,40,39,Flavio,BBT,SL,qua,21:00,0
+82,TERMO 3,5414,Algoritmos em Bioinformática (4),IA,50,35,Shida,BBT,LAB,qua,8:00,0
+82,TERMO 3,5414,Algoritmos em Bioinformática (4),IA,50,35,Shida,BBT,LAB,sex,10:00,0
+83,TERMO 3,5414,Algoritmos em Bioinformática (4),IB,50,44,Shida,BBT,LAB,seg,8:00,0
+83,TERMO 3,5414,Algoritmos em Bioinformática (4),IB,50,44,Shida,BBT,LAB,qua,10:00,0
+84,TERMO 3,5414,Algoritmos em Bioinformática (4),,50,34,Martini,BBT,LAB,ter,19:00,0
+84,TERMO 3,5414,Algoritmos em Bioinformática (4),,50,34,Martini,BBT,LAB,qui,21:00,0
+85,TERMO 3,5414,Algoritmos em Bioinformática (4),NB,50,20,Martini,BBT,LAB,ter,21:00,0
+85,TERMO 3,5414,Algoritmos em Bioinformática (4),NB,50,20,Martini,BBT,LAB,sex,19:00,0
+86,TERMO 3,3518,Circuitos Digitais (4),IA,30,35,Fernanda,EC;EB,LAB,qua,13:30,0
+86,TERMO 3,3518,Circuitos Digitais (4),IA,30,35,Fernanda,EC;EB,SL,sex,15:30,0
+87,TERMO 3,3518,Circuitos Digitais (4),IB,20,19,Thaina,EC;EB,SL,qua,13:30,0
+87,TERMO 3,3518,Circuitos Digitais (4),IB,20,19,Thaina,EC;EB,LAB,sex,15:30,0
+88,TERMO 3,3518,Circuitos Digitais (4),IE,20,19,Thaina,EC;EB,SL,qua,8:00,0
+88,TERMO 3,3518,Circuitos Digitais (4),IE,20,19,Thaina,EC;EB,LAB,sex,10:00,0
+89,TERMO 3,3518,Circuitos Digitais (4),IC,30,21,Cappabianco,EC;EB,SL,qua,8:00,0
+89,TERMO 3,3518,Circuitos Digitais (4),IC,30,21,Cappabianco,EC;EB,LAB,sex,10:00,0
+90,TERMO 3,3518,Circuitos Digitais (4),ID,50,47,Urban,EC;EB,SL,qua,8:00,0
+90,TERMO 3,3518,Circuitos Digitais (4),ID,50,47,Urban,EC;EB,LAB,sex,10:00,0
+91,TERMO 3,3518,Circuitos Digitais (4),N,50,54,Denise,EC;EB,SL,qua,19:00,0
+91,TERMO 3,3518,Circuitos Digitais (4),N,50,54,Denise,EC;EB,LAB,sex,21:00,0
+92,TERMO 3,4537,Tecnologia e Meio Ambiente (2),I,65,59,Marina,BCT,SL,sex,13:30,0
+93,TERMO 3,4537,Tecnologia e Meio Ambiente (2),N,65,43,Marina,BCT,SL,sex,19:00,0
+94,TERMO 5,5136,Fenômenos de Transporte (4),I,65,4,Leonardo,EM,SL,seg,13:30,0
+94,TERMO 5,5136,Fenômenos de Transporte (4),I,65,4,Leonardo,EM,SL,qua,15:30,0
+95,TERMO 5,5136,Fenômenos de Transporte (4),N,65,5,Leonardo,EM,SL,seg,19:00,0
+95,TERMO 5,5136,Fenômenos de Transporte (4),N,65,5,Leonardo,EM,SL,qua,21:00,0
+96,TERMO 5,5142,Materiais Cerâmicos (4),I,25,5,Eliandra,EM,SL,ter,13:30,0
+96,TERMO 5,5142,Materiais Cerâmicos (4),I,25,5,Eliandra,EM,SL,qui,15:30,0
+97,TERMO 5,5142,Materiais Cerâmicos (4),N,25,14,Eliandra,EM,SL,ter,19:00,0
+97,TERMO 5,5142,Materiais Cerâmicos (4),N,25,14,Eliandra,EM,SL,qui,21:00,0
+98,TERMO 5,5143,Materiais Metálicos (4),I,25,6,Danieli,EM,SL,qua,13:30,0
+98,TERMO 5,5143,Materiais Metálicos (4),I,25,6,Danieli,EM,SL,sex,15:30,0
+99,TERMO 5,5143,Materiais Metálicos (4),N,25,11,Danieli,EM,SL,qua,19:00,0
+99,TERMO 5,5143,Materiais Metálicos (4),N,25,11,Danieli,EM,SL,sex,21:00,0
+100,TERMO 5,5144,Materiais Poliméricos (4),I,25,6,Passador,EM,SL,seg,10:00,0
+100,TERMO 5,5144,Materiais Poliméricos (4),I,25,6,Passador,EM,SL,qui,8:00,0
+101,TERMO 5,5144,Materiais Poliméricos (4),N,25,14,Mauricio,EM,SL,seg,21:00,0
+101,TERMO 5,5144,Materiais Poliméricos (4),N,25,14,Mauricio,EM,SL,qui,19:00,0
+102,TERMO 5,5145,Resistência dos Materiais (4),I,65,3,Edson,EM,SL,ter,15:30,0
+102,TERMO 5,5145,Resistência dos Materiais (4),I,65,3,Edson,EM,SL,sex,13:30,0
+103,TERMO 5,5145,Resistência dos Materiais (4),N,65,10,Katia,EM,SL,ter,21:00,0
+103,TERMO 5,5145,Resistência dos Materiais (4),N,65,10,Katia,EM,SL,sex,19:00,0
+104,TERMO 5,5137,Fenômenos Eletromagnéticos Experimental (2),IC,18,15,Kelly,BCT,SL,seg,8:00,0
+105,TERMO 5,5137,Fenômenos Eletromagnéticos Experimental (2),ID,18,18,Kelly,BCT,SL,qui,10:00,0
+106,TERMO 5,5137,Fenômenos Eletromagnéticos Experimental (2),IA,18,14,Rossano,BCT,SL,seg,15:30,0
+107,TERMO 5,5137,Fenômenos Eletromagnéticos Experimental (2),IB,18,4,Rossano,BCT,SL,qui,13:30,0
+108,TERMO 5,5137,Fenômenos Eletromagnéticos Experimental (2),,18,17,Rossano,BCT,SL,seg,21:00,0
+109,TERMO 5,5137,Fenômenos Eletromagnéticos Experimental (2),NB,18,16,Rossano,BCT,SL,qui,19:00,0
+110,TERMO 5,3490,Inteligência Artificial (4),I,50,56,Berton,BCC,SL,ter,13:30,0
+110,TERMO 5,3490,Inteligência Artificial (4),I,50,56,Berton,BCC,LAB,qui,15:30,0
+111,TERMO 5,3490,Inteligência Artificial (4),N,50,56,Didier,BCC,SL,ter,19:00,0
+111,TERMO 5,3490,Inteligência Artificial (4),N,50,56,Didier,BCC,LAB,qui,21:00,0
+112,TERMO 5,2612,Sistemas Operacionais (4),I,50,58,Joahannes,BCC,SL,qua,13:30,0
+112,TERMO 5,2612,Sistemas Operacionais (4),I,50,58,Joahannes,BCC,LAB,sex,15:30,0
+113,TERMO 5,2612,Sistemas Operacionais (4),N,50,58,Joahannes,BCC,SL,qua,19:00,0
+113,TERMO 5,2612,Sistemas Operacionais (4),N,50,58,Joahannes,BCC,LAB,sex,21:00,0
+114,TERMO 5,2975,Teoria de Grafos (4),I,65,8,Luis,BCC,SL,seg,15:30,0
+114,TERMO 5,2975,Teoria de Grafos (4),I,65,8,Luis,BCC,LAB,qui,13:30,0
+115,TERMO 5,2975,Teoria de Grafos (4),N,65,30,Sanderson,BCC,SL,seg,21:00,0
+115,TERMO 5,2975,Teoria de Grafos (4),N,65,30,Sanderson,BCC,SL,qui,19:00,0
+116,TERMO 5,5168,Projeto Orientado a Objetos (4),I,50,51,Fabio,BCC,LAB,ter,15:30,0
+116,TERMO 5,5168,Projeto Orientado a Objetos (4),I,50,51,Fabio,BCC,LAB,sex,13:30,0
+117,TERMO 5,5168,Projeto Orientado a Objetos (4),N,50,57,Fabio,BCC,LAB,ter,21:00,0
+117,TERMO 5,5168,Projeto Orientado a Objetos (4),N,50,57,Fabio,BCC,LAB,sex,19:00,0
+118,TERMO 5,2616,Linguagens Formais e Autômatos (4),I,65,60,Chaves,BCC,SL,seg,13:30,1
+118,TERMO 5,2616,Linguagens Formais e Autômatos (4),I,65,60,Chaves,BCC,SL,qua,15:30,1
+119,TERMO 5,2616,Linguagens Formais e Autômatos (4),N,65,42,Luis,BCC,SL,seg,19:00,0
+119,TERMO 5,2616,Linguagens Formais e Autômatos (4),N,65,42,Luis,BCC,SL,qua,21:00,0
+120,TERMO 5,4714,Introdução à Ecologia (4),I,65,49,Amado,BBT,SL,seg,15:30,0
+120,TERMO 5,4714,Introdução à Ecologia (4),I,65,49,Amado,BBT,SL,qui,13:30,0
+121,TERMO 5,4714,Introdução à Ecologia (4),N,65,55,Amado,BBT,SL,seg,21:00,0
+121,TERMO 5,4714,Introdução à Ecologia (4),N,65,55,Amado,BBT,SL,qui,19:00,0
+122,TERMO 5,5384,Bioética e Biossegurança (2),I,65,60,Luciane,BBT,SL,sex,15:30,0
+123,TERMO 5,5384,Bioética e Biossegurança (2),N,65,48,Luciane,BBT,SL,sex,19:00,0
+124,TERMO 5,5760,Bioquimica Analítica (4),I,65,20,Conceição,BBT,SL,ter,13:30,0
+124,TERMO 5,5760,Bioquimica Analítica (4),I,65,20,Conceição,BBT,SL,qui,15:30,0
+125,TERMO 5,5760,Bioquimica Analítica (4),N,65,20,Conceição,BBT,SL,ter,19:00,0
+125,TERMO 5,5760,Bioquimica Analítica (4),N,65,20,Conceição,BBT,SL,qui,21:00,0
+126,TERMO 5,5762,Engenharia Bioquímica I (4),I,65,16,Elisabeth,BBT,SL,qua,13:30,0
+126,TERMO 5,5762,Engenharia Bioquímica I (4),I,65,16,Elisabeth,BBT,SL,sex,13:30,0
+127,TERMO 5,5372,Introdução à Bioinformática (4),I,50,12,André,BBT,SL,seg,13:30,0
+127,TERMO 5,5372,Introdução à Bioinformática (4),I,50,12,André,BBT,SL,qua,15:30,0
+128,TERMO 5,5372,Introdução à Bioinformática (4),N,50,11,Michael,BBT,SL,seg,19:00,0
+128,TERMO 5,5372,Introdução à Bioinformática (4),N,50,11,Michael,BBT,SL,qua,19:00,0
+129,TERMO 5,5773,Análise Real I (4),I,65,14,Vanessa,BMC,SL,seg,13:30,0
+129,TERMO 5,5773,Análise Real I (4),I,65,14,Vanessa,BMC,SL,qua,15:30,0
+130,TERMO 5,5773,Análise Real I (4),N,65,26,Grasiele,BMC,SL,seg,19:00,0
+130,TERMO 5,5773,Análise Real I (4),N,65,26,Grasiele,BMC,SL,qua,21:00,0
+131,TERMO 5,6062,Elementos de Álgebra (4),I,65,13,Patrícia,BMC,SL,seg,15:30,0
+131,TERMO 5,6062,Elementos de Álgebra (4),I,65,13,Patrícia,BMC,SL,qui,13:30,0
+132,TERMO 5,6062,Elementos de Álgebra (4),N,65,20,Grasiele,BMC,SL,seg,21:00,0
+132,TERMO 5,6062,Elementos de Álgebra (4),N,65,20,Grasiele,BMC,SL,qui,19:00,0
+133,TERMO 5,4148,Otimização Linear (4),I,50,12,Felipe,BMC,SL,ter,13:30,0
+133,TERMO 5,4148,Otimização Linear (4),I,50,12,Felipe,BMC,SL,qui,15:30,0
+134,TERMO 5,4148,Otimização Linear (4),N,50,16,Horácio,BMC,SL,qua,19:00,0
+134,TERMO 5,4148,Otimização Linear (4),N,50,16,Horácio,BMC,SL,sex,21:00,0
+135,TERMO 5,4146,Álgebra Linear Computacional (4),I,50,12,Leduino,BMC,SL,ter,15:30,0
+135,TERMO 5,4146,Álgebra Linear Computacional (4),I,50,12,Leduino,BMC,LAB,sex,13:30,0
+136,TERMO 5,4146,Álgebra Linear Computacional (4),N,50,18,Leduino,BMC,SL,ter,21:00,0
+136,TERMO 5,4146,Álgebra Linear Computacional (4),N,50,18,Leduino,BMC,LAB,sex,19:00,0
+137,TERMO 5,5132,Análise de Sinais (4),I,65,53,Adenauer,EB,SL,ter,15:30,0
+137,TERMO 5,5132,Análise de Sinais (4),I,65,53,Adenauer,EB,SL,sex,13:30,0
+138,TERMO 5,5132,Análise de Sinais (4),N,65,51,Paiva,EB,SL,ter,21:00,0
+138,TERMO 5,5132,Análise de Sinais (4),N,65,51,Paiva,EB,SL,sex,19:00,0
+139,TERMO 5,5903,Circuitos Elétricos II (4),I,65,54,Henrique,EB,SL,ter,13:30,0
+139,TERMO 5,5903,Circuitos Elétricos II (4),I,65,54,Henrique,EB,SL,qui,15:30,0
+140,TERMO 5,5903,Circuitos Elétricos II (4),N,65,38,Henrique,EB,SL,ter,19:00,0
+140,TERMO 5,5903,Circuitos Elétricos II (4),N,65,38,Henrique,EB,SL,qui,21:00,0
+141,TERMO 5,9802,Introdução aos Materiais Elétricos (2),I,65,29,Antonelli,EC,SL,qui,13:30,0
+142,TERMO 5,9802,Introdução aos Materiais Elétricos (2),N,65,35,Antonelli,EC,SL,qui,19:00,0
+143,TERMO 5,6090,Laboratório de Sistemas Computacionais: Arquitetura,I,25,25,Sergio,EC,LAB,qua,13:30,0
+143,TERMO 5,6090,Laboratório de Sistemas Computacionais: Arquitetura,I,25,25,Sergio,EC,LAB,sex,15:30,0
+144,TERMO 5,6090,Laboratório de Sistemas Computacionais: Arquitetura,N,25,25,Tiago,EC,LAB,qua,19:00,0
+144,TERMO 5,6090,Laboratório de Sistemas Computacionais: Arquitetura,N,25,25,Tiago,EC,LAB,sex,21:00,0
+145,TERMO 7,5855,Imunologia Geral (4),I,75,7,Loures,BBT,SL,seg,13:30,0
+145,TERMO 7,5855,Imunologia Geral (4),I,75,7,Loures,BBT,SL,seg,15:30,0
+146,TERMO 7,5867,Biotecnologia Vegetal (4),I,75,5,Michael,BBT,SL,seg,8:00,0
+146,TERMO 7,5867,Biotecnologia Vegetal (4),I,75,5,Michael,BBT,SL,seg,10:00,0
+147,TERMO 7,5865,Biotecnologia Ambiental II (4),I,75,18,Danielle,BBT,SL,sex,8:00,0
+147,TERMO 7,5865,Biotecnologia Ambiental II (4),I,75,18,Danielle,BBT,SL,sex,10:00,0
+148,TERMO 7,6088,Biotecnologia de Energias Renováveis I (4),I,75,9,Danielle,BBT,SL,sex,13:30,0
+148,TERMO 7,6088,Biotecnologia de Energias Renováveis I (4),I,75,9,Danielle,BBT,SL,sex,15:30,0
+149,TERMO 7,5866,Modelos Animais (4),I,75,5,Loures,BBT,SL,ter,13:30,0
+149,TERMO 7,5866,Modelos Animais (4),I,75,5,Loures,BBT,SL,ter,15:30,0
+150,TERMO 7,5785,Reologia dos Materiais (2),I,75,2,Lilia,EM,SL,ter,8:00,0
+151,TERMO 7,5787,Técnicas Experimentais (4),I,75,8,Capella,EM,SL,ter,13:30,0
+151,TERMO 7,5787,Técnicas Experimentais (4),I,75,8,Capella,EM,SL,ter,15:30,0
+152,TERMO 7,6671,Metalurgia Física (4),I,75,10,Katia,EM,SL,sex,13:30,0
+152,TERMO 7,6671,Metalurgia Física (4),I,75,10,Katia,EM,SL,sex,15:30,0
+153,TERMO 7,5786,Síntese de Polímeros (4),I,75,9,Mauricio,EM,SL,qui,13:30,0
+153,TERMO 7,5786,Síntese de Polímeros (4),I,75,9,Mauricio,EM,SL,qui,15:30,0
+154,TERMO 7,5784,Matérias Primas-Cerâmicas (4),I,75,7,Quinteiro,EM,SL,seg,15:30,0
+154,TERMO 7,5784,Matérias Primas-Cerâmicas (4),I,75,7,Quinteiro,EM,SL,qua,15:30,0
+155,TERMO 7,9794,Fundamentos de Administração (2),I,75,20,Iraci,EM,SL,qua,13:30,0
+156,TERMO 7,9794,Fundamentos de Administração (2),N,75,46,Iraci,EM,SL,ter,19:00,0
+157,TERMO 9,5877,Processamento de Materiais Metálicos (4),I,75,10,Dilermando,EM,SL,qui,15:30,0
+157,TERMO 9,5877,Processamento de Materiais Metálicos (4),I,75,10,Dilermando,EM,SL,qui,19:00,0
+158,TERMO 9,5878,Metalurgia Extrativa (2),I,75,5,Gisele,EM,SL,sex,15:30,0
+159,TERMO 9,5879,Processamento de Termoplásticos (4),I,75,5,Passador,EM,SL,seg,15:30,0
+159,TERMO 9,5879,Processamento de Termoplásticos (4),I,75,5,Passador,EM,SL,seg,19:00,0
+160,TERMO 9,6682,Engenharia de Produtos Cerâmicos (4),I,75,16,Albers,EM,SL,ter,15:30,0
+160,TERMO 9,6682,Engenharia de Produtos Cerâmicos (4),I,75,16,Albers,EM,SL,ter,19:00,0
+161,TERMO 9,5881,Corrosão (4),I,75,75,Maraísa,EM,SL,qua,15:30,0
+161,TERMO 9,5881,Corrosão (4),I,75,75,Maraísa,EM,SL,qua,19:00,0
+162,TERMO 7,6098,Lab. de Sist. Comp.: Compiladores (4),I,25,13,Galvão,EC,LAB,seg,13:30,0
+162,TERMO 7,6098,Lab. de Sist. Comp.: Compiladores (4),I,25,13,Galvão,EC,LAB,qui,15:30,0
+163,TERMO 7,6098,Lab. de Sist. Comp.: Compiladores (4),N,25,18,Galvão,EC,LAB,seg,19:00,0
+163,TERMO 7,6098,Lab. de Sist. Comp.: Compiladores (4),N,25,18,Galvão,EC,LAB,qui,21:00,0
+164,TERMO 7,9806,Lab. de Controle Aplicado (2),I,25,18,Sergio,EC,LAB,qua,15:30,0
+165,TERMO 7,9806,Lab. de Controle Aplicado (2),N,25,7,Sergio,EC,LAB,qua,19:00,0
+166,TERMO 7,9882,Projetos em Engenharia de Computação (4),I,25,3,Tiago,EC,LAB,qua,13:30,0
+166,TERMO 7,9882,Projetos em Engenharia de Computação (4),I,25,3,Tiago,EC,LAB,sex,15:30,0
+167,TERMO 7,9882,Projetos em Engenharia de Computação (4),N,25,24,Denise,EC,LAB,qua,21:00,0
+167,TERMO 7,9882,Projetos em Engenharia de Computação (4),N,25,24,Denise,EC,LAB,sex,19:00,0
+168,TERMO 7,6033,Sistemas Embarcados (4),I,25,23,Fernanda,EC,LAB,ter,15:30,0
+168,TERMO 7,6033,Sistemas Embarcados (4),I,25,23,Fernanda,EC,LAB,sex,13:30,0
+169,TERMO 7,6033,Sistemas Embarcados (4),N,25,23,Marcorin,EC,LAB,seg,21:00,0
+169,TERMO 7,6033,Sistemas Embarcados (4),N,25,23,Marcorin,EC,LAB,qua,19:00,0
+170,TERMO 9,8271,Lab. de Sist. Comp.: Comunicação Digital (4),I,25,19,Marcorin,EC,LAB,seg,15:30,0
+170,TERMO 9,8271,Lab. de Sist. Comp.: Comunicação Digital (4),I,25,19,Marcorin,EC,LAB,qua,15:30,0
+171,TERMO 7,4545,Eq. Diferenciais Parciais,I,50,8,Gama,BMC,SL,ter,13:30,0
+171,TERMO 7,4545,Eq. Diferenciais Parciais,I,50,8,Gama,BMC,SL,sex,13:30,0
+172,TERMO 7,4405,Espaços Métricos,I,50,8,Patricia,BMC,SL,seg,13:30,0
+172,TERMO 7,4405,Espaços Métricos,I,50,8,Patricia,BMC,SL,qua,15:30,0
+173,TERMO 7,4402,Otimização Não-Linear,I,50,6,Felipe,BMC,SL,seg,15:30,0
+173,TERMO 7,4402,Otimização Não-Linear,I,50,6,Felipe,BMC,SL,ter,15:30,0
+174,TERMO 7,9826,Resolução de Problemas Via Modelagem Matemática,I,50,50,Horácio,BMC,LABINFO,qua,13:30,0
+174,TERMO 7,9826,Resolução de Problemas Via Modelagem Matemática,I,50,50,Horácio,BMC,SL,sex,15:30,0
+175,TERMO 7,5776,Biomecânica,I,75,34,Kunkel,EB,SL,seg,8:00,0
+175,TERMO 7,5776,Biomecânica,I,75,34,Kunkel,EB,SL,seg,10:00,0
+176,TERMO 9,6111,Bioengenharia,I,75,20,Gurjao,EB,SL,qui,8:00,0
+176,TERMO 9,6111,Bioengenharia,I,75,20,Gurjao,EB,SL,qui,10:00,0
+177,TERMO 9,6111,Bioengenharia,N,75,28,Aoki,EB,SL,qua,19:00,0
+177,TERMO 9,6111,Bioengenharia,N,75,28,Aoki,EB,SL,qua,21:00,0
+178,TERMO 7,5170,Biomateriais,N,75,24,Edson,EB,SL,ter,21:00,0
+179,TERMO 7,5170,Biomateriais,I,75,21,Edson,EB,SL,sex,10:00,0
+180,TERMO 7,4165,Imagens Biomédicas,I,75,41,Matheus,EB,LABINFO,sex,13:30,0
+180,TERMO 7,4165,Imagens Biomédicas,I,75,41,Matheus,EB,LABINFO,sex,15:30,0
+181,TERMO 7,5763,Transdução de Grandezas Biomédicas,I,75,22,Saraiva,EB,SL,seg,13:30,0
+181,TERMO 7,5763,Transdução de Grandezas Biomédicas,I,75,22,Saraiva,EB,SL,qua,13:30,0
+182,TERMO 7,5763,Transdução de Grandezas Biomédicas,N,75,10,Fabiano,EB,SL,seg,19:00,0
+182,TERMO 7,5763,Transdução de Grandezas Biomédicas,N,75,10,Fabiano,EB,SL,qui,21:00,0
+183,TERMO 7,8217,Instrumentos Eletromédicos,I,75,32,Karina,EB,SL,seg,15:30,0
+183,TERMO 7,8217,Instrumentos Eletromédicos,I,75,32,Karina,EB,SL,qua,15:30,0
+184,TERMO 7,6089,Laboratório de Circuitos Elétricos,I,25,22,Aoki,EB,LAB,ter,13:30,0
+185,TERMO 7,6089,Laboratório de Circuitos Elétricos,N,25,18,Aoki,EB,LAB,ter,19:00,0
+186,TERMO 7,4164,Metaheurística,I,30,4,Chaves,BCC,SL,seg,15:30,0
+186,TERMO 7,4164,Metaheurística,I,30,4,Chaves,BCC,SL,qua,13:30,0
+187,TERMO 7,9880,Interação Humano-Computador e Experiência do Usuário,I,50,33,Silva,BCC,LABINFO,qua,13:30,0
+187,TERMO 7,9880,Interação Humano-Computador e Experiência do Usuário,I,50,33,Silva,BCC,SL,sex,15:30,0
+188,TERMO 1,7684,Laboratório de Matemática (2),IA,55,53,Renato,BMC,SL,ter,10:00,0
+189,TERMO 1,7684,Laboratório de Matemática (2),IB,55,53,Erwin,BMC,SL,ter,10:00,0
+190,TERMO 1,7684,Laboratório de Matemática (2),IC,55,49,ClaudiaAline,BMC,SL,ter,10:00,0
+191,TERMO 1,7684,Laboratório de Matemática (2),ID,55,48,Thadeu,BMC,SL,ter,10:00,0
+192,TERMO 1,7684,Laboratório de Matemática (2),,55,41,Alfredo,BMC,SL,ter,18:00,0
+192,TERMO 1,7684,Laboratório de Matemática (2),,55,41,Alfredo,BMC,SL,qui,18:00,0
+193,TERMO 1,7684,Laboratório de Matemática (2),NB,55,36,Karen,BMC,SL,ter,18:00,0
+193,TERMO 1,7684,Laboratório de Matemática (2),NB,55,36,Karen,BMC,SL,qui,18:00,0
+194,TERMO 3,5169,Introdução à Nanotecnologia (2),I,25,24,Elias,BCT,SL,sex,8:00,0
+195,TERMO 3,5169,Introdução à Nanotecnologia (2),N,25,24,Elias,BCT,SL,qua,21:00,0
+196,TERMO 3,6076,Cultura dos Jogos Digitais (2),N,75,71,Pereira,BCT,SL,seg,19:00,0
+197,TERMO 3,6076,Cultura dos Jogos Digitais (2),I,75,72,Pereira,BCT,SL,qua,10:00,0
+198,TERMO 3,5408,Econometria (4),I,75,26,Scriptore,BCT,SL,qua,13:30,0
+198,TERMO 3,5408,Econometria (4),I,75,26,Scriptore,BCT,SL,sex,15:30,0
+199,TERMO 3,5408,Econometria (4),N,75,43,Scriptore,BCT,SL,qua,19:00,0
+199,TERMO 3,5408,Econometria (4),N,75,43,Scriptore,BCT,SL,sex,21:00,0
+200,TERMO 3,4775,Macroeconomia (2),I,75,63,Sato,BCT,LABINFO,qui,10:00,0
+201,TERMO 3,4775,Macroeconomia (2),N,75,38,Sato,BCT,LABINFO,seg,19:00,0
+202,TERMO 3,6079,Tópicos em Ciência e Tecnologia II (2),I,75,38,Walter,BCT,SL,qui,8:00,0
+203,TERMO 3,6079,Tópicos em Ciência e Tecnologia II (2),N,75,62,Walter,BCT,SL,seg,21:00,0
+204,TERMO 3,6084,"Direitos Humanos, Multiculturalismo e Ciência e Tecnologia",IA,75,53,Evandro,BCT,SL,ter,10:00,0
+205,TERMO 3,6084,"Direitos Humanos, Multiculturalismo e Ciência e Tecnologia",IB,25,21,Luciana,BCT,SL,ter,10:00,0
+206,TERMO 3,6084,"Direitos Humanos, Multiculturalismo e Ciência e Tecnologia",N,75,63,Evandro,BCT,SL,ter,21:00,0
+207,TERMO 5,7671,Empreendedorismo (2),I,75,49,Iraci,BCT,SL,ter,15:30,0
+208,TERMO 5,7671,Empreendedorismo (2),N,75,36,Iraci,BCT,SL,ter,21:00,0
+209,TERMO 9,10427,Princípios e Técnicas de Encefalografia em Neurociências,I,40,40,Adenauer,EB,SL,ter,13:30,0
+209,TERMO 9,10427,Princípios e Técnicas de Encefalografia em Neurociências,I,40,40,Adenauer,EB,LAB,sex,15:30,0
+210,TERMO 5,9793,Introdução à Economia,I,75,72,Roberson,?,SL,qua,15:30,0
+211,TERMO 9,5888,Metalurgia do Pó (2),I,75,2,Gisele,EM,SL,sex,13:30,0
+212,TERMO 7,5871,Estrutura e Propriedades de Polímeros (4) - Alteração de PPC,I,75,75,Lilia,EM,SL,seg,8:00,0
+212,TERMO 7,5871,Estrutura e Propriedades de Polímeros (4) - Alteração de PPC,I,75,75,Lilia,EM,SL,seg,10:00,0
+213,TERMO 5,6927,Materiais de construção civil (reof 6T),N,75,5,Quinteiro,EM,SL,seg,19:00,0
+213,TERMO 5,6927,Materiais de construção civil (reof 6T),N,75,5,Quinteiro,EM,SL,seg,21:00,0
+214,TERMO 7,4782,Aspectos de Implementação de Banco de Dados (4),N,50,46,Musa,BCC,LAB,seg,19:00,0
+214,TERMO 7,4782,Aspectos de Implementação de Banco de Dados (4),N,50,46,Musa,BCC,LAB,qua,21:00,0
+215,TERMO 7,7218,Tópicos em Tecnologia da Computação IV (Comunicação Digital),I,50,25,Kimura,BCC,LAB,ter,13:30,0
+215,TERMO 7,7218,Tópicos em Tecnologia da Computação IV (Comunicação Digital),I,50,25,Kimura,BCC,SL,qui,15:30,0
+216,TERMO 5,3050,Validação e Verificação de Software (4),I,50,32,Otavio,BCC,LAB,ter,15:30,0
+216,TERMO 5,3050,Validação e Verificação de Software (4),I,50,32,Otavio,BCC,SL,sex,13:30,0
+217,TERMO 7,6168,Tópicos em Tecnologia da Computação I (4),N,50,12,Arlindo,BCC,SL,ter,21:00,0
+217,TERMO 7,6168,Tópicos em Tecnologia da Computação I (4),N,50,12,Arlindo,BCC,LAB,sex,19:00,0
+218,TERMO 7,7217,Tópicos em Tecnologia da Computação III (Bioinformática),N,50,25,Reginaldo,BCC,SL,ter,19:00,0
+218,TERMO 7,7217,Tópicos em Tecnologia da Computação III (Bioinformática),N,50,25,Reginaldo,BCC,LAB,qui,21:00,0
+219,TERMO 3,2832,Algoritmos e Estruturas de Dados I (4),I,50,54,Regina,BCC,SL,ter,13:30,0
+219,TERMO 3,2832,Algoritmos e Estruturas de Dados I (4),I,50,54,Regina,BCC,SL,qui,15:30,0
+220,TERMO 3,2832,Algoritmos e Estruturas de Dados I (4),N,50,43,Regina,BCC,SL,ter,19:00,0
+220,TERMO 3,2832,Algoritmos e Estruturas de Dados I (4),N,50,43,Regina,BCC,SL,qui,21:00,0
+221,TERMO 5,2831,Banco de Dados (4),I,50,59,Musa,BCC,LAB,seg,15:30,0
+221,TERMO 5,2831,Banco de Dados (4),I,50,59,Musa,BCC,LAB,qui,13:30,0
+222,TERMO 5,2471,Programação Orientada a Objetos (4),N,50,57,Otavio,BCC,LAB,ter,21:00,0
+222,TERMO 5,2471,Programação Orientada a Objetos (4),N,50,57,Otavio,BCC,SL,sex,19:00,0
+223,TERMO 5,2471,Programação Orientada a Objetos (4),I,50,51,Rodrigo,BCC,LAB,qua,8:00,0
+223,TERMO 5,2471,Programação Orientada a Objetos (4),I,50,51,Rodrigo,BCC,SL,sex,10:00,0
+224,TERMO 5,3579,Projeto e Análise de Algoritmos (4),I,50,45,Sanderson,BCC,SL,seg,15:30,0
+224,TERMO 5,3579,Projeto e Análise de Algoritmos (4),I,50,45,Sanderson,BCC,SL,qui,13:30,0
+225,TERMO 3,2650,Geometria Análitica,N,55,54,Mattos,BMC,SL,ter,19:00,0
+225,TERMO 3,2650,Geometria Análitica,N,55,54,Mattos,BMC,SL,qui,21:00,0
+227,TERMO 5,5398,Sistemas Mecânicos (4),N,75,7,Kunkel,EB,SL,sex,19:00,0
+227,TERMO 5,5398,Sistemas Mecânicos (4),N,75,7,Kunkel,EB,SL,sex,21:00,0
+228,TERMO 5,9792,Métodos Matemáticos para Engenharia (4),N,75,30,Paiva,EB,SL,ter,19:00,0
+228,TERMO 5,9792,Métodos Matemáticos para Engenharia (4),N,75,30,Paiva,EB,SL,sex,21:00,0
+229,TERMO 5,6674,Reciclagem de Materiais (2) (reof 5T),I,75,75,Lilia,EM,SL,ter,10:00,0
+230,TERMO 3,9819,INICIAÇÃO AOS PEPICT I,I,50,46,Luciane,BCT,SL,seg,8:00,0
+231,TERMO 3,9819,INICIAÇÃO AOS PEPICT I,N,50,44,Luciane,BCT,SL,qui,21:00,0
+232,TERMO 3,8240,PRÁTICA EM PROJETOS EXTENSIONISTAS I,I,25,40,Marli,BCT,SL,qua,8:00,1
+232,TERMO 3,8240,PRÁTICA EM PROJETOS EXTENSIONISTAS I,I,25,40,Marli,BCT,SL,sex,10:00,1
+233,TERMO 3,8240,PRÁTICA EM PROJETOS EXTENSIONISTAS I,N,25,30,Marli,BCT,SL,ter,21:00,0
+233,TERMO 3,8240,PRÁTICA EM PROJETOS EXTENSIONISTAS I,N,25,30,Marli,BCT,SL,sex,19:00,0
+234,TERMO 9,9804,TCC I - EC,I,50,12,Silva,EC,SL,qui,15:30,0

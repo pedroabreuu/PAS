@@ -69,6 +69,7 @@ std::vector<Sala> parseSalas(const std::string& path, RelatorioParse* rel) {
     const int cUnid = colunaIdx({"Unidade"});
     const int cNome = colunaIdx({"Sala/Laboratório", "Sala/Laboratorio", "Sala"});
     const int cLugares = colunaIdx({"Lugares", "Capacidade"});
+    const int cAcess = colunaIdx({"Acessibilidade", "PCD"});
 
     if (cNome < 0) throw std::runtime_error("salas sem coluna de nome");
 
@@ -105,6 +106,11 @@ std::vector<Sala> parseSalas(const std::string& path, RelatorioParse* rel) {
             }
         }
         s.capacidade = cap;
+
+        if (cAcess >= 0 && cAcess < static_cast<int>(campos.size())) {
+            const auto a = normalizar(campos[cAcess]);
+            s.acessibilidade = (a == "1" || a == "sim" || a == "true");
+        }
 
         salas.push_back(std::move(s));
     }
@@ -154,6 +160,7 @@ ParseGradResult parseGrad(const std::string& path, int duracaoMin, RelatorioPars
     const int cTipoSala = colunaIdx({"TIPO_SALA", "TIPO SALA"});
     const int cDia = colunaIdx({"Dia", "DIA"});
     const int cHora = colunaIdx({"Hora", "HORA"});
+    const int cAcess = colunaIdx({"Acessibilidade", "PCD"});
 
     if (cId < 0 || cDisc < 0 || cDia < 0 || cHora < 0) {
         throw std::runtime_error("grad sem colunas minimas (ID_TURMA/UNIDADE CURRICULAR/Dia/Hora)");
@@ -222,6 +229,12 @@ ParseGradResult parseGrad(const std::string& path, int duracaoMin, RelatorioPars
         }
 
         const int idxTurma = idParaIdx[idTurma];
+
+        {
+            const auto a = normalizar(pegar(cAcess));
+            if (a == "1" || a == "sim" || a == "true") r.turmas[idxTurma].acessibilidade = true;
+        }
+
         Ocorrencia o;
         o.idxTurma = idxTurma;
         try { o.diaSemana = parseDia(pegar(cDia)); }
@@ -530,6 +543,42 @@ void aplicarRestricoesAcessibilidade(std::vector<Sala>& salas, std::vector<Turma
     }
 }
 
+void aplicarAcessibilidade(const std::vector<Sala>& salas, const std::vector<Turma>& turmas, std::vector<Ocorrencia>& ocorrencias, RelatorioParse* rel) {
+    int ocorrenciasRestritas = 0;
+    int turmasSemSalaAcessivel = 0;
+    for (auto& oc : ocorrencias) {
+        const auto& turma = turmas[oc.idxTurma];
+        if (!turma.acessibilidade) continue;
+
+        std::vector<int> filtrado;
+        for (int idx : oc.salasPermitidas) {
+            if (idx >= 0 && idx < static_cast<int>(salas.size()) && salas[idx].acessibilidade) {
+                filtrado.push_back(idx);
+            }
+        }
+
+        if (filtrado.empty()) {
+            ++turmasSemSalaAcessivel;
+            if (rel) {
+                rel->avisos.push_back("Acessibilidade: turma " + std::to_string(turma.idTurma) +
+                                      " exige acessibilidade mas nenhuma sala acessivel esta no dominio (sera inviabilidade)");
+            }
+            continue;
+        }
+
+        if (filtrado.size() != oc.salasPermitidas.size()) {
+            oc.salasPermitidas = std::move(filtrado); // ja ordenado (subconjunto de dominio ordenado)
+            ++ocorrenciasRestritas;
+        }
+    }
+
+    if (rel && (ocorrenciasRestritas > 0 || turmasSemSalaAcessivel > 0)) {
+        rel->avisos.push_back("Acessibilidade: dominio restrito em " + std::to_string(ocorrenciasRestritas) +
+                              " ocorrencias; " + std::to_string(turmasSemSalaAcessivel) +
+                              " ocorrencias sem sala acessivel no dominio");
+    }
+}
+
 std::vector<std::vector<int>> carregarAdjacencias(const std::vector<std::string>& paths, const std::vector<Sala>& salas, RelatorioParse* rel) {
     constexpr int CUSTO_VERTICAL_POR_ANDAR = 1000;
 
@@ -672,6 +721,7 @@ Instancia parse(const CaminhosCSV& caminhos, RelatorioParse* rel) {
     auto mapa = parseMapeamento(caminhos.mapeamento, rel);
     aplicarMapeamento(inst.salas, inst.turmas, inst.ocorrencias, mapa, rel);
     aplicarRestricoesAcessibilidade(inst.salas, inst.turmas, inst.ocorrencias, rel);
+    aplicarAcessibilidade(inst.salas, inst.turmas, inst.ocorrencias, rel);
 
     inst.distSalas = carregarAdjacencias(caminhos.adjacencias, inst.salas, rel);
 

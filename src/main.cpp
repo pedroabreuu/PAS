@@ -35,6 +35,7 @@ static void imprimirRelatorio(const std::string& titulo, const RelatorioCusto& r
     std::cout << " conflitos slot+sala: " << r.conflitos << '\n';
     std::cout << " fora do dominio: " << r.foraDominio << '\n';
     std::cout << " tipo incompativel: " << r.tipoIncompativel << '\n';
+    std::cout << " acessibilidade violada: " << r.acessibilidadeViolada << '\n';
     std::cout << " salas com capacidade excedida: " << r.capacidadeExcedida << " (excesso total: " << r.somaExcessoCapacidade << ")\n";
     std::cout << " Custo consistencia: " << r.custoConsistencia << '\n';
     std::cout << " Custo distancia: " << r.custoDistancia << " (soma dist. intra-turma: " << r.somaDistanciaIntraTurma << ")\n";

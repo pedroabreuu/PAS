@@ -158,6 +158,11 @@ OccEval avaliarOcorrenciaEmSala(int oc, int sala, const Instancia& inst, const S
     }
 
     const auto& turma = inst.turmas[inst.ocorrencias[oc].idxTurma];
+
+    if (turma.acessibilidade && !inst.salas[sala].acessibilidade) {
+        out.inviabilidades += 1;
+    }
+
     const auto& salaRef = inst.salas[sala];
     const int demanda = demandaTurma(turma);
     if (demanda > 0 && salaRef.capacidade > 0) {
@@ -773,6 +778,9 @@ RelatorioCusto computarRelatorio(const Solucao& sol, const Instancia& inst, cons
         slotRoom[cache.slotDaOcorrencia[oc]][s]++;
         if (!salaNoDomnio(oc, s, inst)) ++r.foraDominio;
         if (!tipoSalaPermitido(oc, s, inst)) ++r.tipoIncompativel;
+        if (inst.turmas[inst.ocorrencias[oc].idxTurma].acessibilidade && !inst.salas[s].acessibilidade) {
+            ++r.acessibilidadeViolada;
+        }
 
         const auto& turma = inst.turmas[inst.ocorrencias[oc].idxTurma];
         const int demanda = demandaTurma(turma);

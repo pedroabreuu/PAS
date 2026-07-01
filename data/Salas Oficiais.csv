@@ -1,42 +1,42 @@
-Unidade,Sala/Laboratório,Lugares
-Parque Tecnológico,Sala 201,100
-Parque Tecnológico,Sala 203,69
-Parque Tecnológico,Sala 204,110
-Parque Tecnológico,Sala 205,56
-Parque Tecnológico,Sala 206,100
-Parque Tecnológico,Sala 207,56
-Parque Tecnológico,Sala 208,97
-Parque Tecnológico,Sala 209,56
-Parque Tecnológico,Sala 210,110
-Parque Tecnológico,Sala 301,73
-Parque Tecnológico,Sala 302,69
-Parque Tecnológico,Sala 303,100
-Parque Tecnológico,Sala 304,99
-Parque Tecnológico,Sala 305,51
-Parque Tecnológico,Sala 306,112
-Parque Tecnológico,Sala 307,58
-Parque Tecnológico,Sala 308,90
-Parque Tecnológico,Sala 309,56
-Parque Tecnológico,Sala 310,99
-Parque Tecnológico,Lab. 401,25
-Parque Tecnológico,Lab. 402,25
-Parque Tecnológico,Lab. 403 Inf.,55
-Parque Tecnológico,Lab. 404 Inf.,51
-Parque Tecnológico,Lab. 405 Inf.,52
-Parque Tecnológico,Lab. 406,14
-Parque Tecnológico,Lab. 407 Inf.,66
-Parque Tecnológico,Lab. 20,19
-Parque Tecnológico,Lab. 212,17
-Parque Tecnológico,Lab. 213,25
-Parque Tecnológico,Lab. 214,25
-Parque Tecnológico,Lab. 215,25
-Parque Tecnológico,Lab. 216,25
-Parque Tecnológico,Lab. 217,25
-Parque Tecnológico,Lab. 218,25
-Parque Tecnológico,Lab. 312,25
-Parque Tecnológico,Lab. 313,25
-Parque Tecnológico,Lab. 314,25
-Parque Tecnológico,Lab. 315,25
-Parque Tecnológico,Lab. 316,25
-Parque Tecnológico,Lab. 317,25
-Parque Tecnológico,Lab. 318,25
+Unidade,Sala/Laboratório,Lugares,Acessibilidade
+Parque Tecnológico,Sala 201,100,0
+Parque Tecnológico,Sala 203,69,0
+Parque Tecnológico,Sala 204,110,0
+Parque Tecnológico,Sala 205,56,0
+Parque Tecnológico,Sala 206,100,0
+Parque Tecnológico,Sala 207,56,0
+Parque Tecnológico,Sala 208,97,0
+Parque Tecnológico,Sala 209,56,0
+Parque Tecnológico,Sala 210,110,1
+Parque Tecnológico,Sala 301,73,0
+Parque Tecnológico,Sala 302,69,0
+Parque Tecnológico,Sala 303,100,0
+Parque Tecnológico,Sala 304,99,0
+Parque Tecnológico,Sala 305,51,0
+Parque Tecnológico,Sala 306,112,0
+Parque Tecnológico,Sala 307,58,0
+Parque Tecnológico,Sala 308,90,1
+Parque Tecnológico,Sala 309,56,0
+Parque Tecnológico,Sala 310,99,0
+Parque Tecnológico,Lab. 401,25,0
+Parque Tecnológico,Lab. 402,25,0
+Parque Tecnológico,Lab. 403 Inf.,55,0
+Parque Tecnológico,Lab. 404 Inf.,51,0
+Parque Tecnológico,Lab. 405 Inf.,52,0
+Parque Tecnológico,Lab. 406,14,0
+Parque Tecnológico,Lab. 407 Inf.,66,1
+Parque Tecnológico,Lab. 20,19,0
+Parque Tecnológico,Lab. 212,17,0
+Parque Tecnológico,Lab. 213,25,0
+Parque Tecnológico,Lab. 214,25,0
+Parque Tecnológico,Lab. 215,25,0
+Parque Tecnológico,Lab. 216,25,0
+Parque Tecnológico,Lab. 217,25,0
+Parque Tecnológico,Lab. 218,25,0
+Parque Tecnológico,Lab. 312,25,0
+Parque Tecnológico,Lab. 313,25,0
+Parque Tecnológico,Lab. 314,25,0
+Parque Tecnológico,Lab. 315,25,0
+Parque Tecnológico,Lab. 316,25,0
+Parque Tecnológico,Lab. 317,25,0
+Parque Tecnológico,Lab. 318,25,0
