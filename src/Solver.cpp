@@ -720,14 +720,14 @@ Solucao construirGulosoImpl(const Instancia& inst, const SolverConfig& cfg, std:
         const int rb = rankTipo(tb);
         if (ra != rb) return ra < rb;
 
-        if (cache.qtdSalasCompativeis[a] != cache.qtdSalasCompativeis[b]) {
-            return cache.qtdSalasCompativeis[a] < cache.qtdSalasCompativeis[b];
-        }
-
         const int da = cache.demandaTurma[cache.turmaDaOcorrencia[a]];
         const int db = cache.demandaTurma[cache.turmaDaOcorrencia[b]];
         if (da != db) return da > db;
 
+        if (cache.qtdSalasCompativeis[a] != cache.qtdSalasCompativeis[b]) {
+            return cache.qtdSalasCompativeis[a] < cache.qtdSalasCompativeis[b];
+        }
+        
         if (sol.slotDaOcorrencia[a] != sol.slotDaOcorrencia[b]) {
             return sol.slotDaOcorrencia[a] < sol.slotDaOcorrencia[b];
         }
