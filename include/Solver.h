@@ -9,13 +9,13 @@ enum class Metaheuristica { VNS, ILS };
 
 struct SolverConfig {
     int seed = 873654221;
-    int maxIters = 15000;
+    int maxIters = 10000;
     int maxNoImprove = 5000;
     int shakeStrength = 4;
     int verbose = 1;
 
     Metaheuristica metodo = Metaheuristica::ILS;
-    int numStarts = 20;
+    int numStarts = 10;
     double tempoLimiteSegundos = 0;
     double probAceitarPioraILS = 0.05;
     bool normalizarCustosSuaves = true;
@@ -30,7 +30,7 @@ struct SolverConfig {
     int ilsShakeMax = 0;
     int ilsItersPorNivel = 0;
 
-    int pesoConsistenciaTurmaTipo = 10;
+    int pesoConsistenciaTurmaTipo = 5;
     int pesoDistancia = 1;
     int pesoCapacidadeSobra = 1;
     int pesoCapacidadeExcesso = 10;
@@ -40,7 +40,8 @@ struct SolverConfig {
     bool normalizadorPorRange = true;
     int normalizadorConsistencia = 2000;
     int normalizadorDistancia = 50000;
-    int normalizadorCapacidade = 10000;
+    int normalizadorCapacidadeExcesso = 10000;
+    int normalizadorCapacidadeSobra = 10000;
 };
 
 struct SolverStats {

@@ -167,15 +167,15 @@ OccEval avaliarOcorrenciaEmSala(int oc, int sala, const Instancia& inst, const S
     const int demanda = demandaTurma(turma);
     if (demanda > 0 && salaRef.capacidade > 0) {
         if (demanda > salaRef.capacidade) {
-            // capacidade excedida
+            // capacidade excedida: penalidade linear proporcional ao excesso
             out.custo += custoSuaveNormalizado(
                 static_cast<long long>(cfg.pesoCapacidadeExcesso) * (demanda - salaRef.capacidade),
-                cfg.normalizadorCapacidade,
+                cfg.normalizadorCapacidadeExcesso,
                 cfg);
         } else {
             out.custo += custoSuaveNormalizado(
                 static_cast<long long>(cfg.pesoCapacidadeSobra) * (salaRef.capacidade - demanda),
-                cfg.normalizadorCapacidade,
+                cfg.normalizadorCapacidadeSobra,
                 cfg);
         }
     }
@@ -724,6 +724,10 @@ Solucao construirGulosoImpl(const Instancia& inst, const SolverConfig& cfg, std:
             return cache.qtdSalasCompativeis[a] < cache.qtdSalasCompativeis[b];
         }
 
+        const int da = cache.demandaTurma[cache.turmaDaOcorrencia[a]];
+        const int db = cache.demandaTurma[cache.turmaDaOcorrencia[b]];
+        if (da != db) return da > db;
+
         if (sol.slotDaOcorrencia[a] != sol.slotDaOcorrencia[b]) {
             return sol.slotDaOcorrencia[a] < sol.slotDaOcorrencia[b];
         }
@@ -791,14 +795,14 @@ RelatorioCusto computarRelatorio(const Solucao& sol, const Instancia& inst, cons
                 ++r.capacidadeExcedida; // contador quantas salas estouraram
                 r.somaExcessoCapacidade += excesso;
                 r.custoCapacidade += custoSuaveNormalizado( static_cast<long long>(cfg.pesoCapacidadeExcesso) * excesso,
-                    cfg.normalizadorCapacidade,
+                    cfg.normalizadorCapacidadeExcesso,
                     cfg);
             } else {
                 const int sobra = cap - demanda;
                 r.somaSobraCapacidade += sobra;
                 r.custoCapacidade += custoSuaveNormalizado(
                     static_cast<long long>(cfg.pesoCapacidadeSobra) * sobra,
-                    cfg.normalizadorCapacidade,
+                    cfg.normalizadorCapacidadeSobra,
                     cfg);
             }
         }
@@ -939,10 +943,10 @@ void definirNormalizadoresPorRange(const Instancia& inst, SolverConfig& cfg) {
     }
     if (minDemPos == std::numeric_limits<int>::max()) minDemPos = 0;
 
-    const long long maxExc = static_cast<long long>(cfg.pesoCapacidadeExcesso) * std::max(0, maxDem - minCapPos);
-    const long long maxSob = static_cast<long long>(cfg.pesoCapacidadeSobra) * std::max(0, maxCap - minDemPos);
-    const long long nCap = std::max<long long>({1, maxExc, maxSob});
-    cfg.normalizadorCapacidade = static_cast<int>(std::min<long long>(nCap, std::numeric_limits<int>::max()));
+    const long long nExc = std::max<long long>(1, std::max(0, maxDem - minCapPos));
+    const long long nSob = std::max<long long>(1, std::max(0, maxCap - minDemPos));
+    cfg.normalizadorCapacidadeExcesso = static_cast<int>(std::min<long long>(nExc, std::numeric_limits<int>::max()));
+    cfg.normalizadorCapacidadeSobra = static_cast<int>(std::min<long long>(nSob, std::numeric_limits<int>::max()));
 
     int maxDist = 0;
     for (const auto& linha : inst.distSalas) {
@@ -952,7 +956,7 @@ void definirNormalizadoresPorRange(const Instancia& inst, SolverConfig& cfg) {
         }
     }
     maxDist = std::max(maxDist, cfg.penalidadeDistDesconhecida);
-    const long long nDisp = std::max<long long>(1, static_cast<long long>(cfg.pesoDistancia) * maxDist);
+    const long long nDisp = std::max<long long>(1, maxDist);
     cfg.normalizadorDistancia = static_cast<int>(std::min<long long>(nDisp, std::numeric_limits<int>::max()));
 
     std::vector<int> contagem(inst.turmas.size() * NUM_TIPOS, 0);
@@ -964,7 +968,7 @@ void definirNormalizadoresPorRange(const Instancia& inst, SolverConfig& cfg) {
     for (int c : contagem) maxOcc = std::max(maxOcc, c);
     const int nSalas = static_cast<int>(inst.salas.size());
     const int maxDistintas = std::max(1, std::min(maxOcc, nSalas) - 1);
-    const long long nCons = std::max<long long>(1, static_cast<long long>(cfg.pesoConsistenciaTurmaTipo) * maxDistintas);
+    const long long nCons = std::max<long long>(1, maxDistintas);
     cfg.normalizadorConsistencia = static_cast<int>(std::min<long long>(nCons, std::numeric_limits<int>::max()));
 }
 
@@ -980,7 +984,8 @@ std::pair<Solucao, SolverStats> executar(const Instancia& inst, const SolverConf
     if (cfg.verbose >= 1) {
         std::cout << "[norm] range Ncons=" << cfg.normalizadorConsistencia
                   << " Ndisp=" << cfg.normalizadorDistancia
-                  << " Ncap=" << cfg.normalizadorCapacidade << '\n';
+                  << " Nexc=" << cfg.normalizadorCapacidadeExcesso
+                  << " Nsob=" << cfg.normalizadorCapacidadeSobra << '\n';
         std::cout << "[seed] sementes Taillard carregadas: " << sementes.size()
                   << (cfg.sortearSementes ? " (sorteio aleatorio)" : " (ordem fixa)") << '\n';
         if (!sementes.empty()) {
