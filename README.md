@@ -1,47 +1,76 @@
-# Alocação de Salas
-Solução em C++ para o problema de alocação de salas, com as metaheurísticas
-**Iterated Local Search (ILS)** e **Variable Neighborhood Search (VNS)**.
-
 ## Requisitos
+
 - CMake 3.16 ou superior
 - Compilador com suporte a C++17 (GCC ou Clang)
+- Python 3.10 ou superior
+- Licença acadêmica do Gurobi em `~/gurobi.lic`
 
-## Compilação
-Na raiz do repositório, execute:
+## Instalação
+
+Na raiz do repositório:
+
 ```bash
 cmake -S . -B build -DCMAKE_BUILD_TYPE=Release
 cmake --build build --parallel
+
+python3 -m venv .venv
+.venv/bin/pip install -r exact/requirements.txt
 ```
 
 ## Execução
-Os comandos devem ser executados na raiz do repositório, pois os arquivos de
-entrada são lidos do diretório `data/`.
 
-Para executar com ILS, método padrão:
-```bash
-./build/pas
-```
-Ou, explicitamente:
+Todos os comandos são executados na raiz do repositório, pois os arquivos de
+entrada são lidos de `data/`.
+
+### Metaheurísticas
+
+ILS (padrão) e VNS:
+
 ```bash
 ./build/pas --ils
-```
-
-Para executar com VNS:
-```bash
 ./build/pas --vns
 ```
 
-A melhor alocação encontrada é gravada em `results/alocacao.csv`. Um resumo da
-instância, os custos, as inviabilidades e o tempo de execução são exibidos no
-terminal.
+A melhor alocação vai para `results/alocacao.csv`.
 
-## Avaliação do agendamento real
-Para avaliar o arquivo `data/agendamento_real.csv` com os mesmos critérios do
-solver:
+### Modelo exato
+
 ```bash
-./build/eval_real
+./scripts/run_exact.sh --gap 0
 ```
 
-## Dados
-Os arquivos CSV usados pelo programa estão em `data/`. As sementes utilizadas
-nas execuções estão em `Sementes_Taillard.txt`.
+etapa por etapa:
+
+```bash
+./build/dump_instancia  # exporta a instância para data/dump/
+.venv/bin/python exact/main.py --gap 0  # resolve -> results/alocacao_mip.csv
+./build/eval_real results/alocacao_mip.csv  # avalia a solução
+```
+
+O passo do dump só precisa ser refeito quando `data/*.csv` ou `src/parser.cpp`
+mudarem.
+
+### Opções
+
+| Flag | Efeito |
+|---|---|
+| `--gap 0` | exige ótimo provado (sem isso o Gurobi para em 0,01%) |
+| `--resumo ARQ.json` | grava status, custo, limitante, gap, tempo e nós |
+| `--warm-start CSV` | parte de uma solução existente |
+| `--sem-distancia` / `--sem-consistencia` | desliga termos do objetivo |
+| `--time-limit S` / `--threads N` | controles do solver |
+| `--quiet` | suprime o log do Gurobi |
+
+## Avaliação
+
+`eval_real` avalia qualquer alocação com os mesmos critérios do solver. Aceita
+CSVs com as colunas `idx_ocorrencia` e `codigo_sala`, localizadas pelo nome no
+cabeçalho:
+
+```bash
+./build/eval_real results/alocacao_mip.csv  # modelo exato
+./build/eval_real results/alocacao.csv  # ILS/VNS
+./build/eval_real  # data/agendamento_real.csv (padrão)
+```
+
+O número oficial é sempre o do `eval_real`, não o objetivo do Gurobi.

@@ -1,3 +1,8 @@
 build/
 .cache/
 results/
+data/dump/
+__pycache__/
+*.log
+.venv/
+gurobi.lic

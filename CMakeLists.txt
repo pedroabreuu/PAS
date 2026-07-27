@@ -107,6 +107,19 @@ set_target_properties(eval_real PROPERTIES
     RUNTIME_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}"
 )
 
+add_executable(dump_instancia
+    ${CMAKE_SOURCE_DIR}/tools/dump_instancia.cpp
+    ${EVAL_REAL_SHARED_SOURCES}
+)
+
+target_include_directories(dump_instancia PRIVATE
+    ${CMAKE_SOURCE_DIR}/include
+)
+
+set_target_properties(dump_instancia PROPERTIES
+    RUNTIME_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}"
+)
+
 if(PAS_ENABLE_LTO)
     include(CheckIPOSupported)
     check_ipo_supported(RESULT ipo_supported OUTPUT ipo_error)

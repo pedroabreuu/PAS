@@ -1,3 +1,4 @@
+#include <algorithm>
 #include <fstream>
 #include <iomanip>
 #include <iostream>
@@ -28,7 +29,8 @@ static void imprimirRelatorio(const std::string& titulo, const RelatorioCusto& r
     std::cout << " Custo capacidade: " << r.custoCapacidade << " (sobra total: " << r.somaSobraCapacidade << ", excesso total: " << r.somaExcessoCapacidade << ")\n";
 }
 
-int main() {
+int main(int argc, char** argv) {
+    const std::string caminhoAlocacao = (argc > 1) ? argv[1] : "data/agendamento_real.csv";
     CaminhosCSV caminhos;
     caminhos.duracaoPadraoMin = 120;
     caminhos.salas = "data/Salas Oficiais.csv";
@@ -50,12 +52,28 @@ int main() {
     std::unordered_map<std::string, int> codParaIdx;
     for (const auto& s : inst.salas) codParaIdx[s.codigo] = s.idx;
 
-    std::ifstream in("data/agendamento_real.csv");
-    if (!in) { std::cerr << "nao abriu agendamento_real.csv\n"; return 1; }
+    std::ifstream in(caminhoAlocacao);
+    if (!in) { std::cerr << "nao abriu " << caminhoAlocacao << '\n'; return 1; }
+    std::cout << "Alocacao avaliada: " << caminhoAlocacao << '\n';
 
     Solucao sol(inst);
     std::string linha;
-    std::getline(in, linha);
+
+    if (!std::getline(in, linha)) { std::cerr << "arquivo vazio: " << caminhoAlocacao << '\n'; return 1; }
+    const auto cabecalho = splitCSV(removerBOM(linha), ',');
+
+    int colIdx = -1, colCod = -1;
+    for (std::size_t i = 0; i < cabecalho.size(); ++i) {
+        const std::string nome = trim(cabecalho[i]);
+        if (nome == "idx_ocorrencia") colIdx = static_cast<int>(i);
+        else if (nome == "codigo_sala") colCod = static_cast<int>(i);
+    }
+    if (colIdx < 0 || colCod < 0) {
+        std::cerr << "cabecalho de " << caminhoAlocacao
+                  << " precisa das colunas 'idx_ocorrencia' e 'codigo_sala'\n";
+        return 1;
+    }
+    const int colMax = std::max(colIdx, colCod);
 
     int lidos = 0, salaInexistente = 0, idxForaRange = 0;
     int maxIdx = -1;
@@ -63,9 +81,9 @@ int main() {
         linha = removerBOM(linha);
         if (trim(linha).empty()) continue;
         auto campos = splitCSV(linha, ',');
-        if (campos.size() < 2) continue;
-        int idx = std::stoi(trim(campos[0]));
-        std::string cod = trim(campos[1]);
+        if (static_cast<int>(campos.size()) <= colMax) continue;
+        int idx = std::stoi(trim(campos[colIdx]));
+        std::string cod = trim(campos[colCod]);
         ++lidos;
         maxIdx = std::max(maxIdx, idx);
         if (idx < 0 || idx >= nOcc) { ++idxForaRange; continue; }
@@ -78,7 +96,7 @@ int main() {
         sol.alocacao[idx] = it->second;
     }
 
-    std::cout << "Linhas lidas do agendamento_real: " << lidos << '\n';
+    std::cout << "Linhas lidas da alocacao: " << lidos << '\n';
     std::cout << "Maior idx_ocorrencia no arquivo: " << maxIdx << '\n';
     std::cout << "idx fora do range [0," << nOcc-1 << "]: " << idxForaRange << '\n';
     std::cout << "codigo_sala inexistente: " << salaInexistente << '\n';

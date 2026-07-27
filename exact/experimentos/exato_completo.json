@@ -1,0 +1,20 @@
+{
+  "status": "OPTIMAL",
+  "custo_modelo": 6667395.0,
+  "limitante_inferior": 6667395.0,
+  "gap_relativo": 0.0,
+  "tempo_s": 3.227418899536133,
+  "nos": 1,
+  "variaveis": 35094,
+  "binarias": 8971,
+  "restricoes": 32292,
+  "termos": [
+    "capacidade",
+    "consistencia",
+    "distancia"
+  ],
+  "warm_start": null,
+  "time_limit": 600.0,
+  "gap_alvo": 0.0,
+  "saida": "results/alocacao_mip.csv"
+}
