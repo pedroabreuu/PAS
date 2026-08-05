@@ -408,3 +408,39 @@ ID_TURMA,TERMO,CÓD. UC,UNIDADE CURRICULAR,TURMA,Vagas,Inscritos,DOCENTE,DEPARTA
 233,TERMO 3,8240,PRÁTICA EM PROJETOS EXTENSIONISTAS I,N,25,30,Marli,BCT,SL,ter,21:00,0
 233,TERMO 3,8240,PRÁTICA EM PROJETOS EXTENSIONISTAS I,N,25,30,Marli,BCT,SL,sex,19:00,0
 234,TERMO 9,9804,TCC I - EC,I,50,12,Silva,EC,SL,qui,15:30,0
+235,,,Algebra,,,3,Abbas,PPGMAT,SL,ter,10:00,0
+235,,,Algebra,,,3,Abbas,PPGMAT,SL,sex,8:00,0
+236,,,Álgebra Linear,,,5,Angelo Calil Bianchi,PPGMAT,SL,ter,13:30,0
+236,,,Álgebra Linear,,,5,Angelo Calil Bianchi,PPGMAT,SL,sex,10:00,0
+237,,,Análise Funcional,,,5,Leandro Cândido Batista,PPGMAT,SL,seg,10:00,0
+237,,,Análise Funcional,,,5,Leandro Cândido Batista,PPGMAT,SL,qua,8:00,0
+238,,,Aplicações de Sistemas Dinâmicas à Ciência e Tecnologia,,,7,Elbert Einstein Nehrer Macau,PPGMAT,SL,seg,13:30,0
+238,,,Aplicações de Sistemas Dinâmicas à Ciência e Tecnologia,,,7,Elbert Einstein Nehrer Macau,PPGMAT,SL,seg,15:30,0
+239,,,Aprendizado de Máquina,,,12,Rodrigo Contreras,PPG-CC,SL,qua,13:30,0
+239,,,Aprendizado de Máquina,,,12,Rodrigo Contreras,PPG-CC,SL,qua,15:30,0
+240,,,Bioestatística,,,6,Matheus Cardoso Moraes,PPG-PIT/PPG-EB,SL,sex,19:00,0
+240,,,Bioestatística,,,6,Matheus Cardoso Moraes,PPG-PIT/PPG-EB,SL,sex,21:00,0
+241,,,Ciência de Dados II,,,10,"Emerson, Camila e Flávia",PPG-PIT,SL,qui,19:00,0
+241,,,Ciência de Dados II,,,10,"Emerson, Camila e Flávia",PPG-PIT,SL,qui,21:00,0
+242,,,Introduçao ao Processamento de Sinais Biomédicos,,,5,Karina Rabello Casali,PPG-EB,SL,seg,19:00,0
+242,,,Introduçao ao Processamento de Sinais Biomédicos,,,5,Karina Rabello Casali,PPG-EB,SL,qua,19:00,0
+243,,,Projeto de Ciência de Dados,,,8,Filipe Verri,PPG-CC,SL,ter,13:30,0
+244,,,Tópicos Avançados em Bioengenharia,,,5,Fabio Aoki,PPG-EB,SL,qua,19:00,0
+244,,,Tópicos Avançados em Bioengenharia,,,5,Fabio Aoki,PPG-EB,SL,qua,21:00,0
+245,,,Tópicos Avançados em Sinais,,,6,Adenauer Girardi Casali,PPG-EB,SL,ter,13:30,0
+245,,,Tópicos Avançados em Sinais,,,6,Adenauer Girardi Casali,PPG-EB,SL,sex,15:30,0
+246,,,Topologia,,,4,Tiago Rodrigues Macedo,PPGMAT,SL,qua,15:30,0
+246,,,Topologia,,,4,Tiago Rodrigues Macedo,PPGMAT,SL,sex,13:30,0
+247,,,Transdução de Grandezas Biomédicas,,,6,Roberson Saraiva Poli,PPG-EB,SL,qui,19:00,0
+247,,,Transdução de Grandezas Biomédicas,,,6,Roberson Saraiva Poli,PPG-EB,SL,qui,21:00,0
+248,,,User Center Design,,,8,Tiago Silva da Silva,PPG-CC,SL,qua,19:00,0
+248,,,User Center Design,,,8,Tiago Silva da Silva,PPG-CC,SL,qua,21:00,0
+249,,,Visão Computacional,,,9,Fábio Augusto M. Cappabianco,PPG-CC,SL,qui,19:00,0
+249,,,Visão Computacional,,,9,Fábio Augusto M. Cappabianco,PPG-CC,SL,qui,21:00,0
+250,,,Seminários,,,11,Gleiciane,PPGMAT,SL,qua,13:30,0
+251,,,Matemática Discreta,,,6,Marcelo Cristino Gama,PROFMAT,SL,sex,8:00,0
+251,,,Matemática Discreta,,,6,Marcelo Cristino Gama,PROFMAT,SL,sex,10:00,0
+252,,,Números e Funções Reais,,,15,Pedro Levit Kaufmann,PROFMAT,SL,sex,13:30,0
+252,,,Números e Funções Reais,,,15,Pedro Levit Kaufmann,PROFMAT,SL,sex,15:30,0
+253,,,Fundamentos de Cálculo,,,13,Kelly Cristina Jorge Sakamoto,PROFMAT,SL,sex,8:00,0
+253,,,Fundamentos de Cálculo,,,13,Kelly Cristina Jorge Sakamoto,PROFMAT,SL,sex,10:00,0

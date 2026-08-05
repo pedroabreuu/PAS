@@ -1,3 +1,13 @@
+# Problema de Alocação de Salas
+
+Alocação de salas de aula para a grade horária do Instituto de Ciência e Tecnologia da UNIFESP
+
+O problema é resolvido por dois caminhos independentes que compartilham o mesmo
+avaliador de custo:
+
+- **Metaheurísticas** (C++): ILS e VNS sobre uma construção gulosa.
+- **Modelo exato** (Python + Gurobi): MILP que prova otimalidade da instância.
+
 ## Requisitos
 
 - CMake 3.16 ou superior
